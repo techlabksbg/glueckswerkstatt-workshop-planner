@@ -12,6 +12,7 @@ Um die Programmierung etwas zu vereinfachen, sind alle Indizies 0-basiert.
   * Es gibt $S$ (ca. 320) Teilnehmer $s=0,1,2,\ldots, S-1$.
   * Jeder Teilnehmer $s$ hat eine Präferenz $p_{s,w}$ für jeden Workshop $w$.
     * Z.B. 8,4,2,1,0,0,0,... für erste, zweite, dritte, vierte Wahl etc.
+    * Für Teilnehmer, von denen keine Rückmeldung eingegangen ist, sind alle Präferenzen 0.
   * Jeder Teilnehmer $s$ hat eine Klasse $k_s$ (etwa 0 bis 15).
 
 ## Entscheidungsvariablen

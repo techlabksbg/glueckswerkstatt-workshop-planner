@@ -1,7 +1,8 @@
 import csv
 
 # Achtung! Damit das Programm funktioniert, muss es in jenem Ordner ausgeführt werden,
-# indem die Datei 'fehler.csv' liegt. Ansonster wird die Datei nicht gefunden.
+# indem die Datei 'fehler.csv' liegt. Ansonsten wird die Datei nicht gefunden.
+# Navigieren Sie dazu in der VS-Code Kommandozeile ins Verzeichnis 'csv-uebungen/csv'
 
 with open("fehler.csv") as csvfile:
     # CSV-Format erraten
@@ -12,7 +13,7 @@ with open("fehler.csv") as csvfile:
     # Array mit allen Zeilen erstellen
     tabelle = [row for row in csv_reader]
 
-header = csv_reader.fieldnames
+header : list[str] = csv_reader.fieldnames  # type: ignore
 
 print(f"Header: {header}")
 print("\nTabelle als Liste von dictionaries:")
@@ -25,8 +26,13 @@ for zeile in tabelle:
 
 print(tabelle)
 
+print(f"\nZeile 3 (Index 2): tabelle[2]={tabelle[2]}")
+print(f"tabelle[2]['x'] = {tabelle[2]['x']},  tabelle[2]['x^3'] = {tabelle[2]['x^3']}")
 
-# Fehler finden und korrigieren
+# TODO
+# Fehler finden, ausgeben und in der tablle korrigieren
+
+
 
 
 # CSV-Datei korrigiert schreiben

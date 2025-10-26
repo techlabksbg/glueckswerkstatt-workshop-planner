@@ -1,15 +1,64 @@
 import csv
 
 class Plan:
+    """ Alle Daten für einen Plan
+    Attribute:
+        T: Anzahl Zeitslots
+        W: Anzahl Workshops
+        S: Anzahl Teilnehmende
+        workshops[w]: Name vom Workshop w
+        students[s]: Name vom Teilnehmer s
+        m[w]: Maximale Teilnehmerzahl am Workshop w
+        p[s][w]: Präferenz von Teilnehmer s für Workshop w
+        k[s]: Nummer der Klasse von Teilnehmer s
+        laueri[s]: True, wenn der Teilnehmer keine Präferenzen abgegeben hat
+        x[s][t]: Workshopnummer für Teilnehmer s zur Zeit t (-1 heisst ungeplant)
+        b[w][t]: Anzahl geplante Teilnehmer im Workhop w zur Zeit t
+        Q: Aktueller Wert der Zielfunktion
 
-    def __init__(self, csv_students, csv_workshops, T=2):
+        student_data: Input-Datei der Studenten/Präferenzen als Liste von Dictionaries (Zeilen der CSV-Datei)
+        workdhop_data: Input-Datei der Workshop-Definitionen als Liste von Dictionaries (Zeilen der CSV-Datei)
+
+    Methoden:
+        schedule(s,t,w): Teilnehmer s zur Zeit t in Workshop w ein- oder umplanen
+        unschedule(s,t): Teilnehmer s zur Zeit t als ungeplant markieren
+    """
+    def __init__(self, csv_students:str, csv_workshops:str, T:int=2):
+        """ Initialisierung eines Plans, Parameter sind
+
+        csv_students: Dateipfad zur CSV-Datei mit Teilnehmern/Präferenzen
+
+        csv_workshop: Dateipfad zur CSV-Datei mit Workshop-Definitionen
+        """
         self.T = T
+        """ Anzahl Zeitslots """
+        self.k : list[int]= []
+        """ k[s] ist die Nummer der Klasse des Teilnehmers s """
+        self.W : int = 0
+        """ Anzahl Workshops """
+        self.workshops : list[str]= []
+        """ Arrary mit einem Dictionary zu jedem Workshop """
+        self.m : list[int]= []
+        """ m[w]: Maximale Teilnehmerzahl in Workshop w """
+        self.students : list[str] = []
+        """ students[s]: Name des Teilnehmers s """
+        self.p :list[list[int]]= []
+        """ p[s][w] ist die Präferenz von Teilnehmer s für Workshop w """
+        self.klassen : dict = {}
+        """ Name der Klasse als Schlüssel liefert als Wert Nummer der Klasse """
+        self.x : list[list[int]]= []
+        """ x[s][t] liefert den geplanten Workshop (-1, falls ungeplant) """
+        self.o : list[list[int]]= []
+        """ o[s] ist ein Array mit der Reihenfolge der Workshopnummern nach Präferenzen """
+        self.laueri :list[bool] = []
+        """ laueri[s] ist True, wenn keine Präferenzen angegeben wurden. """
         self.read_students(csv_students)
         self.read_workshops(csv_workshops)
         self.process_data()
-        self.show_data()
+        #self.show_data()
 
     def show_data(self):
+        """ Zeigt die eingelesenen Daten an """
         print(f"Zeitfenster T={self.T}")
         print(f"Anzahl Workshops W={self.W}")
         print(f"   {self.workshops}")
@@ -22,43 +71,58 @@ class Plan:
         print(self.k)
 
     def process_data(self):
-        # Workshop data
+        """ Konvertiert die eingelesenen Daten in die nötigen Variablen """
         self.W = len(self.workshop_data)
+        """ Anzahl Workshops """
         self.workshops = [zeile["Workshop"] for zeile in self.workshop_data]
-        self.m = [zeile["max Teilnehmer"] for zeile in self.workshop_data]
+        """ Arrary mit einem Dictionary zu jedem Workshop """
+        self.m = [int(zeile["max Teilnehmer"]) for zeile in self.workshop_data]
+        """ m[w]: Maximale Teilnehmerzahl in Workshop w """
 
         self.students = []
+        """ students[s]: Name des Teilnehmers s """
         self.p = []
-        self.k = []
+        """ p[s][w] ist die Präferenz von Teilnehmer s für Workshop w """
         self.klassen = {}
+        """ Name der Klasse als Schlüssel liefert als Wert Nummer der Klasse """
         self.x = []
-        self.o = []  # o[s] ist ein Array mit der Reihenfolge der Präferenzen
+        """ x[s][t] liefert den geplanten Workshop (-1, falls ungeplant) """
+        self.o = []  
+        """ o[s] ist ein Array mit der Reihenfolge der Workshopnummern nach Präferenzen """
+        self.laueri = []
+        """ laueri[s] ist True, wenn keine Präferenzen angegeben wurden. """
         for zeile in self.student_data:
-            if zeile["1. Wahl"]!="":
-                self.students.append(zeile["Name"])
-                self.p.append([0 for i in range(self.W)])
-                self.o.append([])
+            self.students.append(zeile["Name"])
+            self.p.append([0 for i in range(self.W)])
+            self.o.append([])
+            klasse = zeile["Klasse"]
+            if not klasse in self.klassen:
+                self.klassen[klasse] = len(self.klassen)
+            self.k.append(self.klassen[klasse])
+            self.x.append([-1 for i in range(self.T)])
+            self.laueri.append(zeile["1. Wahl"]=="")
+            if not self.laueri[-1]:     # Teilnehmer mit Präferenzen
                 for pref in range(1,5):
                     workshop = zeile[f"{pref}. Wahl"]
                     w = self.workshops.index(workshop)
                     self.p[-1][w] = 2**(4-pref)
-                    self.o.append(w)
-                klasse = zeile["Klasse"]
-                if not klasse in self.klassen:
-                    self.klassen[klasse] = len(self.klassen)
-                self.k.append(self.klassen[klasse])
-                self.x.appen([-1 for i in range(self.T)])
+                    self.o[-1].append(w)
+            else:  # Teilnehmer ohne Präferenzen
+                self.o[-1] = [-1 for _ in range(self.W)]
+
+
         self.S = len(self.students)
+        """ Anzahl Teilnehmende """
 
         # Beschränkungen
-        # Anzahl Teilnehmer in Workshop w zur zeit t
         self.b = [[0 for t in range(self.T)] for w in range(self.W)]
-        # Zielfunktion Q
+        """ b[w][t] ist die Anzahl geplanter Teilnehmer in Workshop w zur zeit t """
         self.Q = 0
+        """ aktueller Wert der Zielfunktion Q """
 
 
-    # TODO: update self.Q
-    def schedule(self, s,t,w):
+    def schedule(self, s:int,t:int,w:int) -> None:
+        """ Den Teilnehmer s zur Zeit t in den Workshop w einplanen """
         if w in self.x[s]:
             raise RuntimeError(f"Student {s} ist bereits im Workshop {w} verplant!")
         # Im Falle einer Umplanung, die Anzahl Teilnehmer am alten Workshop anpassen
@@ -73,15 +137,17 @@ class Plan:
 
 
     def unschedule(self, s,t):
+        """ Teilnehmer s im Zeitslot t wieder aus dem Plan entfernen (dann ungeplant)"""
         oldw = self.x[s][t]
         # Falls vorher geplant, Anzahl Teilnehmer anpassen
         if (oldw!=-1):
             self.b[oldw][t] -= 1
+            self.Q -= self.p[s][oldw]
         self.x[s][t] = -1
 
-    # Anzahl besuchte Workshops für Teilnehmer s
-    def besuchte_Workshops(self, s):
-        return self.x[s].count(lambda x:x!=-1)
+    def besuchte_Workshops(self, s:int) -> int:
+        """ berechnet die Anzahl besuchter Workshops für Teilnehmer s """
+        return self.T-self.x[s].count(-1)
     
 
 
@@ -107,7 +173,70 @@ class Plan:
             # Array mit allen Zeilen erstellen
             self.workshop_data = [row for row in csv_reader]
 
+    def laueris_einplanen(self):
+        """ Plant alle Laueris in den jeweils am wenigsten belegten Workshop ein."""
+        for s in range(self.S):
+            if self.laueri[s]:   # Laueri?
+                for t in range(self.T):
+                    if self.x[s][t]==-1: # noch unverplant?
+                        minB = self.S   # Viel zu grosser Wert
+                        bestW = -1      # Bester Workshop 
+                        for w in range(self.W):
+                            # Workshop mit kleinerer Belegung als der kleinste bis jetzt
+                            # und Workshop noch nicht ausgebucht
+                            # und Workshop noch nicht vom Teilnehmer s besucht
+                            if self.b[w][t]<minB and self.b[w][t]<self.m[w] and not w in self.x[s]:
+                                # Neuer bester Workshop merken
+                                minB = self.b[w][t]
+                                bestW = w
+                        # Workshop einplanen
+                        self.schedule(s,t,bestW)
 
 
+    def report(self):
+        """ Gibt einen Report auf die Konsole aus """
+        print(f"Zielfunktion Q = {self.Q}\n")
+        print("Workshops:")
+        ok = True
+        for w in range(self.W):
+            res = f"{self.workshops[w]} (max {self.m[w]}) "
+            overbooked = False
+            for t in range(self.T):
+                res += f" {self.b[w][t]}"
+                if self.b[w][t]>self.m[w]:
+                    overbooked = True
+            if overbooked:
+                print("❌ " + res)
+                ok = False
+        if ok:
+            print("✅ Kein Workshop ist überbelegt.")
+        
+        print("\nTeilnehmer:")
+        ok = True
+        for s in range(self.S):
+            if self.x[s].count(-1)>0:
+                print(f"❌ Teilnehmer {self.students[s]} muss noch zu {self.x[s].count(-1)} workshops zugeteilt werden.")
+                ok = False
+        if ok:
+            print("✅ Alle Teilnehmer sind eingeplant.")
+            
 
-plan = Plan("../data/2024.csv", "../data/2024m_w.csv")
+    def plan2csv(self, datei:str):
+        """ Schreibt den Gesamtplan in eine CSV-Datei"""
+        data = []
+        for s in range(self.S):
+            h = {"Name" : self.student_data[s]["Name"],
+                 "Klasse" : self.student_data[s]["Klasse"],
+                 "E-Mail" : self.student_data[s]["E-Mail"],
+                 }
+            for t in range(self.T):
+                h[f"Workshop {t+1}"] = self.workshops[self.x[s][t]]
+            data.append(h)
+        with open(datei, "w") as csvfile:
+            # Writer vorbereiten
+            writer = csv.DictWriter(csvfile, fieldnames=data[0].keys(), dialect=self.dialect)
+            # Header (erste Zeile) schreiben
+            writer.writeheader()
+            # Alle Zeilen schreiben
+            writer.writerows(data)
+                
