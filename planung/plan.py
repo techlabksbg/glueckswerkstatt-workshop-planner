@@ -12,9 +12,11 @@ class Plan:
         p[s][w]: Präferenz von Teilnehmer s für Workshop w
         k[s]: Nummer der Klasse von Teilnehmer s
         laueri[s]: True, wenn der Teilnehmer keine Präferenzen abgegeben hat
+        o[s][i]: Für Nicht-Laueris, Liste der Workshops in der Reihenfolge der Präferenzen von i=0 (1. Prio) bis 3 (4. Prio)
         x[s][t]: Workshopnummer für Teilnehmer s zur Zeit t (-1 heisst ungeplant)
         b[w][t]: Anzahl geplante Teilnehmer im Workhop w zur Zeit t
         Q: Aktueller Wert der Zielfunktion
+        q[s]: Score für Teilnehmer s
 
         student_data: Input-Datei der Studenten/Präferenzen als Liste von Dictionaries (Zeilen der CSV-Datei)
         workdhop_data: Input-Datei der Workshop-Definitionen als Liste von Dictionaries (Zeilen der CSV-Datei)
@@ -52,6 +54,11 @@ class Plan:
         """ o[s] ist ein Array mit der Reihenfolge der Workshopnummern nach Präferenzen """
         self.laueri :list[bool] = []
         """ laueri[s] ist True, wenn keine Präferenzen angegeben wurden. """
+        self.q : list[int] = []
+        """ q[s] ist das Score für Teilnehmer s """
+        self.Q : int = 0
+        """ Summe alle Teilnehmerscores"""
+
         self.read_students(csv_students)
         self.read_workshops(csv_workshops)
         self.process_data()
@@ -91,6 +98,7 @@ class Plan:
         """ o[s] ist ein Array mit der Reihenfolge der Workshopnummern nach Präferenzen """
         self.laueri = []
         """ laueri[s] ist True, wenn keine Präferenzen angegeben wurden. """
+        self.q = [0 for s in range(self.S)]
         for zeile in self.student_data:
             self.students.append(zeile["Name"])
             self.p.append([0 for i in range(self.W)])
@@ -130,7 +138,9 @@ class Plan:
         if oldw!=-1:
             self.b[oldw][t]-=1
             self.Q -= self.p[s][w]
+            self.q[s] -= self.p[s][w]
         self.Q += self.p[s][w]
+        self.q[s] += self.p[s][w]
         self.x[s][t] = w
         # Anzahl Teilnehmer am Workshop w zur Zeit t anpassen
         self.b[w][t] += 1
@@ -143,6 +153,7 @@ class Plan:
         if (oldw!=-1):
             self.b[oldw][t] -= 1
             self.Q -= self.p[s][oldw]
+            self.q -= self.p[s][oldw]
         self.x[s][t] = -1
 
     def besuchte_Workshops(self, s:int) -> int:
