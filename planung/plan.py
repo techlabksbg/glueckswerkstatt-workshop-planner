@@ -98,7 +98,6 @@ class Plan:
         """ o[s] ist ein Array mit der Reihenfolge der Workshopnummern nach Präferenzen """
         self.laueri = []
         """ laueri[s] ist True, wenn keine Präferenzen angegeben wurden. """
-        self.q = [0 for s in range(self.S)]
         for zeile in self.student_data:
             self.students.append(zeile["Name"])
             self.p.append([0 for i in range(self.W)])
@@ -121,6 +120,8 @@ class Plan:
 
         self.S = len(self.students)
         """ Anzahl Teilnehmende """
+        self.q = [0 for s in range(self.S)]
+        """ q[s]: Aktueller Score für Teilnehmer s """
 
         # Beschränkungen
         self.b = [[0 for t in range(self.T)] for w in range(self.W)]
@@ -137,8 +138,8 @@ class Plan:
         oldw = self.x[s][t]
         if oldw!=-1:
             self.b[oldw][t]-=1
-            self.Q -= self.p[s][w]
-            self.q[s] -= self.p[s][w]
+            self.Q -= self.p[s][oldw]
+            self.q[s] -= self.p[s][oldw]
         self.Q += self.p[s][w]
         self.q[s] += self.p[s][w]
         self.x[s][t] = w
@@ -171,7 +172,8 @@ class Plan:
             # Datei mit erratenem Format einlesen
             csv_reader = csv.DictReader(csvfile, dialect=self.dialect)
             # Array mit allen Zeilen erstellen
-            self.student_data = [row for row in csv_reader]
+            self.student_data : list[dict[str,str]]= [row for row in csv_reader]
+            """ Teilnehmerdaten aus Nesa Export """
             self.student_header = csv_reader.fieldnames
 
     def read_workshops(self, csv_workshops):
@@ -235,14 +237,14 @@ class Plan:
     def plan2csv(self, datei:str):
         """ Schreibt den Gesamtplan in eine CSV-Datei"""
         data = []
+        # Tabelle befüllen
         for s in range(self.S):
-            h = {"Name" : self.student_data[s]["Name"],
-                 "Klasse" : self.student_data[s]["Klasse"],
-                 "E-Mail" : self.student_data[s]["E-Mail"],
-                 }
             for t in range(self.T):
-                h[f"Workshop {t+1}"] = self.workshops[self.x[s][t]]
-            data.append(h)
+                w = self.x[s][t]
+                kursname = self.workshops[w]+f".{t}"
+                h = {"Klasse": kursname, "Schüler/Schülerin" : self.student_data[s]["Name"]}
+                data.append(h)
+        # Tabelle als CSV rausschreiben
         with open(datei, "w") as csvfile:
             # Writer vorbereiten
             writer = csv.DictWriter(csvfile, fieldnames=data[0].keys(), dialect=self.dialect)
@@ -251,3 +253,84 @@ class Plan:
             # Alle Zeilen schreiben
             writer.writerows(data)
                 
+
+
+    def teilnehmer(self, w:int,t:int) -> list[int] :
+        """ Liefert eine (möglicherweise leere) Liste mit Teilnehmernummern, die zur Zeit t im Workshop w eingeteilt sind """
+        return [s for s in range(self.S) if self.x[s][t]==w]  # Alle Teilnehmer am Workshop w zur Zeit t
+
+    def ueberbelegt(self) -> list[dict[str,int]]:
+        """ Liefert eine Liste von dictionaries mit keys "w" und "t" der überbelegten workshops. """
+        res = []
+        for w in range(self.W):
+            for t in range(self.T):
+                if self.b[w][t]>self.m[w]:
+                    res.append({"w":w, "t":t})
+        return res
+
+    def umteilungen(self, w:int, t:int) -> dict[int, list[dict[str, int]]]:
+        """ Berechnet alle möglichen Umteilungen (ohne Überfüllen von Workshops) der Teilnehmer von Workshop w zur Zeit t.
+            Liefert einen nach Scoreänderung sortierten dictionary mit Teilnehmernummer als Schlüssel und Folgenden Werten:
+            eine nach Scoreänderung sortierte Liste mit dictionaries mit Schlüsseln "w" (Workshopnummer) und "dp" (Scoreänderung).
+            d = plan.umteilungen(w,t)
+            best_s = d.keys()[0]
+            best_w = d[best_s][0]["w"]
+            best_dp = d[best_s][0]["dp"]
+        """
+        res = {}
+        for s in self.teilnehmer(w,t):
+            res[s] = []
+            for otherw in range(self.W):
+                if otherw != w and self.b[otherw][t] < self.m[otherw] and (not otherw in self.x[s]):
+                    res[s].append({"w":otherw, "dp":self.p[s][otherw]-self.p[s][w]})
+            res[s].sort(key=lambda e:-e["dp"])  # Absteigend nach Scoreänderung sortieren
+
+        # Teilnehmer absteigend nach Scoreänderung sortieren.
+        return {key:res[key] for key in sorted(res.keys(), key=lambda s:-res[s][0]["dp"])}
+    
+    def worstStudents(self) -> list[int]:
+        """ Liefert eine Liste der nicht-Laueris mit den schlechtesten Scores """
+        worstScore = 99999
+        worstStuds = []
+        for s in range(self.S):
+            if not self.laueri[s]:
+                if self.q[s]<worstScore:
+                    worstScore = self.q[s]
+                    worstStuds = [s]
+                elif self.q[s]==worstScore:
+                    worstStuds.append(s)
+        return worstStuds
+
+
+    def save(self) -> list[list[int]]:
+        """ Gibt eine Kopie der x-Variable zurÜck, um einen Plan zu speichern."""
+        return [xx.copy() for xx in self.x]
+    
+    def reset(self) -> None:
+        """ Setzt den aktuellen Plan zurück (nichts eingeplant) """
+        self.x = [[-1 for t in range(self.T)] for s in range(self.S)]
+        self.q = [0 for s in range(self.S)]
+        self.b = [[0 for t in range(self.T)] for w in range(self.W)]
+        self.Q = 0
+
+    def restore(self, x:list[list[int]]) -> None:
+        """ Lädt den Plan von der Variablen x """
+        # x kopieren
+        self.x = [[x[s][t] for t in range(self.T)] for s in range(self.S)]
+        # q berechnen
+        for s in range(self.S):
+            self.q[s] = 0
+            for w in self.x[s]:
+                if (w!=-1):
+                    self.q[s] += self.p[s][w]
+        # Q
+        self.Q = sum(self.q)
+        # b
+        self.b = [[0 for t in range(self.T)] for w in range(self.W)]
+        for s in range(self.S):
+            for t in range(self.T):
+                w = self.x[s][t]
+                if w!=-1:
+                    self.b[w][t] += 1
+
+
