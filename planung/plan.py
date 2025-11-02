@@ -24,6 +24,16 @@ class Plan:
     Methoden:
         schedule(s,t,w): Teilnehmer s zur Zeit t in Workshop w ein- oder umplanen
         unschedule(s,t): Teilnehmer s zur Zeit t als ungeplant markieren
+        
+        save(): Kopie der x-Variable zum Zwischenspeichern einer Planung
+        reset(): Alles auf ungeplant zurücksetzen
+        restore(x): Plan mit gegebener x-Variable wieder herstellen
+
+        teilnehmer(w,t): Liste mit Teilnehmernummern im Workshop w zur Zeit t
+        ueberbelegt(): Liste mit Dictionaries mit einträgen "w" und "t" (überbelegte Workshops)
+        umteilungen(w,t): Mögliche Umteilungen (ohne Überfüllen) mit Bewertungen (Differenz in Scorepunkten)
+        worstStudents(): Liste mit Teilnehmernummern mit schlechtestem Score
+
     """
     def __init__(self, csv_students:str, csv_workshops:str, T:int=2):
         """ Initialisierung eines Plans, Parameter sind
