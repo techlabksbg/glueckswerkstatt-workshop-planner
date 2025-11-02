@@ -236,13 +236,24 @@ class Plan:
         
         print("\nTeilnehmer:")
         ok = True
+        totalUnplanned = 0
+        histogramm = [0 for i in range(max(self.q)+1)]
         for s in range(self.S):
+            if not self.laueri[s]:
+                histogramm[self.q[s]] += 1
             if self.x[s].count(-1)>0:
-                print(f"❌ Teilnehmer {self.students[s]} muss noch zu {self.x[s].count(-1)} workshops zugeteilt werden.")
+                if ok:
+                    print(f"❌ Teilnehmer {self.students[s]} muss noch zu {self.x[s].count(-1)} workshops zugeteilt werden.")
+                totalUnplanned += 1
                 ok = False
         if ok:
             print("✅ Alle Teilnehmer sind eingeplant.")
-            
+        else:
+            print(f" Total sind {totalUnplanned} Teilnehmer nicht vollständig eingeplant")
+        print("\nScores:")
+        for i,w in enumerate(histogramm):
+            print(f"{i:2d} Punkte: {w:3d}   ({w/self.S*100:.1f}%)")
+        
 
     def plan2csv(self, datei:str):
         """ Schreibt den Gesamtplan in eine CSV-Datei"""
