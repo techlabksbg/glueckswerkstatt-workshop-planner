@@ -68,6 +68,8 @@ class Plan:
         """ q[s] ist das Score für Teilnehmer s """
         self.Q : int = 0
         """ Summe alle Teilnehmerscores"""
+        self.b : list[list[int]]= [[]]
+        """ b[w][t] ist die Anzahl geplanter Teilnehmer in Workshop w zur zeit t """
 
         self.read_students(csv_students)
         self.read_workshops(csv_workshops)
