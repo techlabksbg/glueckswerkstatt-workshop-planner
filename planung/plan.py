@@ -68,8 +68,16 @@ class Plan:
         """ q[s] ist das Score für Teilnehmer s """
         self.Q : int = 0
         """ Summe alle Teilnehmerscores"""
-        self.b : list[list[int]]= [[]]
+        self.b : list[list[int]]= []
         """ b[w][t] ist die Anzahl geplanter Teilnehmer in Workshop w zur zeit t """
+        self.s_in_w : list[list[list[int]]] = []
+        """ s_in_w[w][t] ist eine Liste mit allen Teilnehmern eines Workshops zur Zeit t """
+        self.allNonLauerisPlanned : bool = False
+        """ True, wenn alle nicht-Laueris in T (2) Workshops eingeteilt sind """
+        self.numNonLauerisPlanned : int = 0
+        """ Anzahl eingeplanter nicht-Laueris """
+        self.numNonLaueris : int  = 0
+        """ Anazahl nicht-laueris """
 
         self.read_students(csv_students)
         self.read_workshops(csv_workshops)
@@ -121,6 +129,7 @@ class Plan:
             self.x.append([-1 for i in range(self.T)])
             self.laueri.append(zeile["1. Wahl"]=="")
             if not self.laueri[-1]:     # Teilnehmer mit Präferenzen
+                self.numNonLaueris+=1
                 for pref in range(1,5):
                     workshop = zeile[f"{pref}. Wahl"]
                     w = self.workshops.index(workshop)
@@ -134,6 +143,8 @@ class Plan:
         """ Anzahl Teilnehmende """
         self.q = [0 for s in range(self.S)]
         """ q[s]: Aktueller Score für Teilnehmer s """
+
+        self.s_in_w = [[[] for t in range(self.T)] for w in range(self.W)]
 
         # Beschränkungen
         self.b = [[0 for t in range(self.T)] for w in range(self.W)]
@@ -152,11 +163,18 @@ class Plan:
             self.b[oldw][t]-=1
             self.Q -= self.p[s][oldw]
             self.q[s] -= self.p[s][oldw]
+            self.s_in_w[oldw][t].remove(s)
+            if not self.laueri[s]:
+                self.numNonLauerisPlanned -= 1
         self.Q += self.p[s][w]
         self.q[s] += self.p[s][w]
         self.x[s][t] = w
+        self.s_in_w[w][t].append(s)
         # Anzahl Teilnehmer am Workshop w zur Zeit t anpassen
         self.b[w][t] += 1
+        if not self.laueri[s]:
+            self.numNonLauerisPlanned += 1
+            self.allNonLauerisPlanned = self.T*self.numNonLaueris == self.numNonLauerisPlanned
 
 
     def unschedule(self, s,t):
@@ -166,8 +184,20 @@ class Plan:
         if (oldw!=-1):
             self.b[oldw][t] -= 1
             self.Q -= self.p[s][oldw]
-            self.q -= self.p[s][oldw]
-        self.x[s][t] = -1
+            self.q[s] -= self.p[s][oldw]
+            self.s_in_w[oldw][t].remove(s)
+            self.x[s][t] = -1
+            if not self.laueri[s]:
+                self.numNonLauerisPlanned -= 1
+                self.allNonLauerisPlanned = False
+
+    def unschedule_laueris(self):
+        """ Entfernt alle Laueris aus dem Plan """
+        for s in range(self.S):
+            if self.laueri[s]:
+                for t in range(self.T):
+                    self.unschedule(s,t)
+
 
     def besuchte_Workshops(self, s:int) -> int:
         """ berechnet die Anzahl besuchter Workshops für Teilnehmer s """
@@ -248,13 +278,18 @@ class Plan:
                     print(f"❌ Teilnehmer {self.students[s]} muss noch zu {self.x[s].count(-1)} workshops zugeteilt werden.")
                 totalUnplanned += 1
                 ok = False
+            else: # check if all workshops are different
+                if len(set(self.x[s]))!=self.T:
+                    print(f"❌❌❌ Teilnehmer {s} besucht einen Workshop mehrfach: Geplant: {self.x[s]} ❌❌❌")
+                    ok = False
+
         if ok:
             print("✅ Alle Teilnehmer sind eingeplant.")
         else:
-            print(f" Total sind {totalUnplanned} Teilnehmer nicht vollständig eingeplant")
-        print("\nScores:")
+            print(f" Total sind {totalUnplanned} Teilnehmer nicht vollständig oder mit Mehrfachbsuch eingeplant")
+        print("\nScores:")        
         for i,w in enumerate(histogramm):
-            print(f"{i:2d} Punkte: {w:3d}   ({w/self.S*100:.1f}%)")
+            print(f"{i:2d} Punkte: {w:3d}   {w/self.numNonLaueris*100:.1f}%   (mit Laueris {w/self.S*100:.1f}%)")
         
 
     def plan2csv(self, datei:str):
@@ -324,6 +359,22 @@ class Plan:
                     worstStuds.append(s)
         return worstStuds
 
+    def upperBound(self) -> int:
+        frei = [self.m[w]*self.T for w in range(self.W)]  # Freie Plätze in Workshop w (Summe aller Zeitslots)
+        eingeteilt = [0 for s in range(self.S)]  # Anzahl workshops in die Teilnehmer s eingeteilt ist.
+        upperQ = 0
+        for prio in range(4):
+            for s in range(self.S):
+                if not self.laueri[s] and eingeteilt[s]<self.T:
+                    w = self.o[s][prio]
+                    if frei[w]>0:
+                        frei[w]-=1
+                        upperQ += 2**(3-prio)
+                        eingeteilt[s]+=1
+        return upperQ
+
+
+
 
     def save(self) -> list[list[int]]:
         """ Gibt eine Kopie der x-Variable zurÜck, um einen Plan zu speichern."""
@@ -334,7 +385,10 @@ class Plan:
         self.x = [[-1 for t in range(self.T)] for s in range(self.S)]
         self.q = [0 for s in range(self.S)]
         self.b = [[0 for t in range(self.T)] for w in range(self.W)]
+        self.s_in_w = [[[] for t in range(self.T)] for w in range(self.W)]
         self.Q = 0
+        self.numNonLauerisPlanned = 0
+        self.allNonLauerisPlanned = False
 
     def restore(self, x:list[list[int]]) -> None:
         """ Lädt den Plan von der Variablen x """
@@ -350,10 +404,14 @@ class Plan:
         self.Q = sum(self.q)
         # b
         self.b = [[0 for t in range(self.T)] for w in range(self.W)]
+        self.numNonLauerisPlanned = 0
         for s in range(self.S):
             for t in range(self.T):
                 w = self.x[s][t]
                 if w!=-1:
                     self.b[w][t] += 1
-
+                    if not self.laueri[s]:
+                        self.numNonLauerisPlanned += 1
+        # s_in_w
+        self.s_in_w = [[[s for s in range(self.S) if self.x[s][t]==w] for t in range(self.T)] for w in range(self.W)]
 
