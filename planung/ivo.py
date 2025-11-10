@@ -7,7 +7,11 @@ import random
 
 def bester_workshop_planen(plan:Plan, s:int):
     randT = list(range(plan.T))
-    for w in plan.o[s]:  # Workshops nach Priorität
+    
+    randW = list(range(plan.W))
+    random.shuffle(randW)  # Zufällige Liste mit allen Workshopnummern
+
+    for w in plan.o[s]+randW:  # Workshops nach Priorität, dann zufällig
         if not w in plan.x[s]:  # s besucht w noch nicht
             random.shuffle(randT) # Liste mit Zeitslots verwürfeln
             for t in randT:
@@ -21,15 +25,28 @@ def bester_workshop_planen(plan:Plan, s:int):
 
 
 # Daten einlesen
-plan = Plan("../data/2024.csv", "../data/2024m_w.csv")
+plan = Plan("../data/2025.csv", "../data/2025m_w.csv")
 
-for i in range(plan.T):  # 2x wiederholen
+def greedy(plan):
     randS = list(range(plan.S))
     random.shuffle(randS)  # Zufällige Reihenfolge der Teilnehmer
-    for s in randS:
-        if not plan.laueri[s]:
-            bester_workshop_planen(plan,s)
+    for i in range(plan.T):  # 2x wiederholen
+        for s in randS:
+            if not plan.laueri[s]:
+                bester_workshop_planen(plan,s)
+        randS.reverse()
 
+bestQ = 0
+bestx = []
+for i in range(1000):
+    plan.reset()
+    greedy(plan)
+    if plan.Q > bestQ:
+        bestQ = plan.Q
+        bestx = plan.save()
+        print(f"Neue beste Lösung {bestQ}")
+
+plan.restore(bestx)
 
 plan.laueris_einplanen()
 

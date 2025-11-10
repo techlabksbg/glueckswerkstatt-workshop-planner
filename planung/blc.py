@@ -164,7 +164,7 @@ def greedy_then_tabu(plan:Plan):
 
 
 # Daten einlesen
-plan = Plan("../data/2024.csv", "../data/2024m_w.csv")
+plan = Plan("../data/2025.csv", "../data/2025m_w.csv")
 
 
 greedy_then_tabu(plan)
