@@ -71,11 +71,15 @@ for student in range(len(tabelle)):
 # Anonymisierte Tabelle nach Klasse, dann Namen sortieren
 tabelle.sort(key=lambda x:x["Klasse"]+x["Name"])
 
+fields = ["Name", "Klasse", "1. Wahl", "2. Wahl", "3. Wahl", "4. Wahl"]
+needed = [{k:zeile[k] for k in fields} for zeile in tabelle]
+
+
 # CSV-Datei schreiben
 with open(csv_out, "w") as csvfile:
     # Writer vorbereiten
-    writer = csv.DictWriter(csvfile, fieldnames=csv_reader.fieldnames, dialect=dialect)
+    writer = csv.DictWriter(csvfile, fieldnames=fields, dialect=dialect)
     # Header (erste Zeile) schreiben
     writer.writeheader()
     # Alle Zeilen schreiben
-    writer.writerows(tabelle)
+    writer.writerows(needed)

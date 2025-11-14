@@ -1,293 +1,293 @@
-Form-Nr.	Name	Klasse	Ausbildungsgang	WP	Typ	1. Wahl	2. Wahl	3. Wahl	4. Wahl	WM	Relevant	Status	Zugewiesen	F.	F. Dat.	Bemerkung A.	Bemerkung S.	Zeit	Optionen	E-Mail
-17651	student000	class00	Gym-W	BG	GL	GL16	GL21	GL13	GL03	0	GL16	Anmeldung abgeschlossen		Nein			-	10.11.2025 19:09		no.mail
-17397	student002	class00	Gym-W	BG	GL	GL14	GL16	GL10	GL21	0	GL14	Anmeldung abgeschlossen		Nein			-	30.10.2025 14:47		no.mail
-17406	student018	class00	Gym-W	BG	GL	GL15	GL07	GL04	GL02	0	GL15	Anmeldung abgeschlossen		Nein			-	30.10.2025 15:45		no.mail
-17468	student034	class00	Gym-W	MU	GL	GL21	GL18	GL16	GL17	0	GL21	Anmeldung abgeschlossen		Nein			-	02.11.2025 19:22		no.mail
-17404	student054	class00	Gym-W	BG	GL	GL20	GL10	GL01	GL15	0	GL20	Anmeldung abgeschlossen		Nein			-	30.10.2025 15:34		no.mail
-17674	student066	class00	Gym-W	BG	GL	GL20	GL10	GL01	GL15	0	GL20	Anmeldung abgeschlossen		Nein			-	11.11.2025 14:00		no.mail
-17675	student067	class00	Gym-W	BG	GL	GL07	GL10	GL01	GL13	0	GL07	Anmeldung abgeschlossen		Nein			-	11.11.2025 14:01		no.mail
-17399	student083	class00	Gym-W	MU	GL	GL03	GL10	GL16	GL21	0	GL03	Anmeldung abgeschlossen		Nein			-	30.10.2025 14:49		no.mail
-17417	student097	class00	Gym-W	BG	GL	GL14	GL16	GL10	GL21	0	GL14	Anmeldung abgeschlossen		Nein			-	30.10.2025 17:31		no.mail
-17444	student113	class00	Gym-W	MU	GL	GL21	GL18	GL16	GL17	0	GL21	Anmeldung abgeschlossen		Nein			-	31.10.2025 17:19		no.mail
-17403	student148	class00	Gym-W	BG	GL	GL15	GL07	GL04	GL21	0	GL15	Anmeldung abgeschlossen		Nein			-	30.10.2025 15:01		no.mail
-17402	student155	class00	Gym-W	BG	GL	GL20	GL10	GL01	GL15	0	GL20	Anmeldung abgeschlossen		Nein			-	30.10.2025 14:56		no.mail
-17467	student161	class00	Gym-W	MU	GL	GL16	GL13	GL10	GL06	0	GL16	Anmeldung abgeschlossen		Nein			-	02.11.2025 18:31		no.mail
-17706	student166	class00	Gym-W	MU	GL	GL16	GL04	GL10	GL06	0	GL16	Anmeldung abgeschlossen		Nein			-	13.11.2025 07:26		no.mail
-17400	student185	class00	Gym-W	BG	GL	GL15	GL07	GL04	GL02	0	GL15	Anmeldung abgeschlossen		Nein			-	30.10.2025 14:55		no.mail
-17442	student186	class00	Gym-W	MU	GL	GL21	GL18	GL16	GL17	0	GL21	Anmeldung abgeschlossen		Nein			-	31.10.2025 17:06		no.mail
-17441	student216	class00	Gym-W	MU	GL	GL21	GL18	GL16	GL17	0	GL21	Anmeldung abgeschlossen		Nein			-	31.10.2025 17:06		no.mail
-17394	student238	class00	Gym-W	BG	GL	GL14	GL16	GL10	GL21	0	GL14	Anmeldung abgeschlossen		Nein			-	30.10.2025 14:47		no.mail
-17681	student244	class00	Gym-W	MU	GL	GL14	GL16	GL10	GL21	0	GL14	Anmeldung abgeschlossen		Nein			-	11.11.2025 14:03		no.mail
-17396	student255	class00	Gym-W	BG	GL	GL14	GL16	GL10	GL21	0	GL14	Anmeldung abgeschlossen		Nein			-	30.10.2025 14:47		no.mail
-17401	student279	class00	Gym-W	BG	GL	GL15	GL07	GL04	GL02	0	GL15	Anmeldung abgeschlossen		Nein			-	30.10.2025 14:55		no.mail
-17398	student282	class00	Gym-W	BG	GL	GL14	GL16	GL10	GL21	0	GL14	Anmeldung abgeschlossen		Nein			-	30.10.2025 14:47		no.mail
-17395	student283	class00	Gym-W	MU	GL	GL14	GL16	GL10	GL21	0	GL14	Anmeldung abgeschlossen		Nein			-	30.10.2025 14:47		no.mail
-	student001	class01																		no.mail
-17470	student020	class01	Gym-N	BG	GL	GL16	GL10	GL08	GL11	0	GL16	Anmeldung abgeschlossen		Nein			-	02.11.2025 21:15		no.mail
-17612	student025	class01	Gym-N	BG	GL	GL16	GL03	GL12	GL01	0	GL16	Anmeldung abgeschlossen		Nein			-	06.11.2025 18:07		no.mail
-17405	student036	class01	Gym-P	BG	GL	GL10	GL01	GL09	GL16	0	GL10	Anmeldung abgeschlossen		Nein			-	30.10.2025 15:39		no.mail
-17374	student055	class01	Gym-P	BG	GL	GL06	GL04	GL09	GL07	0	GL06	Anmeldung abgeschlossen		Nein			-	30.10.2025 09:18		no.mail
-17519	student086	class01	Gym-P	MU	GL	GL14	GL18	GL16	GL21	0	GL14	Anmeldung abgeschlossen		Nein			-	03.11.2025 21:13		no.mail
-17475	student098	class01	Gym-N	BG	GL	GL14	GL19	GL17	GL10	0	GL14	Anmeldung abgeschlossen		Nein			-	03.11.2025 08:19		no.mail
-17565	student100	class01	Gym-N	BG	GL	GL16	GL14	GL10	GL18	0	GL16	Anmeldung abgeschlossen		Nein			-	05.11.2025 12:33		no.mail
-17462	student103	class01	Gym-N	BG	GL	GL16	GL07	GL19	GL10	0	GL16	Anmeldung abgeschlossen		Nein			-	02.11.2025 14:21		no.mail
-17375	student104	class01	Gym-P	BG	GL	GL06	GL04	GL09	GL07	0	GL06	Anmeldung abgeschlossen		Nein			-	30.10.2025 09:18		no.mail
-17683	student115	class01	Gym-P	MU	GL	GL01	GL14	GL19	GL03	0	GL01	Anmeldung abgeschlossen		Nein			-	11.11.2025 14:04		no.mail
-17669	student120	class01	Gym-P	BG	GL	GL10	GL01	GL09	GL16	0	GL10	Anmeldung abgeschlossen		Nein			-	11.11.2025 13:58		no.mail
-17691	student123	class01	Gym-P	MU	GL	GL07	GL16	GL10	GL13	0	GL07	Anmeldung abgeschlossen		Nein			-	11.11.2025 14:07		no.mail
-17566	student124	class01	Gym-P	MU	GL	GL16	GL14	GL19	GL10	0	GL16	Anmeldung abgeschlossen		Nein			-	05.11.2025 12:33		no.mail
-17373	student147	class01	Gym-P	BG	GL	GL06	GL04	GL09	GL07	0	GL06	Anmeldung abgeschlossen		Nein			-	30.10.2025 09:18		no.mail
-17473	student159	class01	Gym-N	BG	GL	GL16	GL13	GL20	GL10	0	GL16	Anmeldung abgeschlossen		Nein			-	03.11.2025 08:15		no.mail
-17649	student169	class01	Gym-P	MU	GL	GL14	GL16	GL12	GL20	0	GL14	Anmeldung abgeschlossen		Nein			-	10.11.2025 16:41		no.mail
-17685	student174	class01	Gym-N	MU	GL	GL01	GL14	GL19	GL03	0	GL01	Anmeldung abgeschlossen		Nein			-	11.11.2025 14:05		no.mail
-17376	student187	class01	Gym-P	BG	GL	GL04	GL09	GL07	GL10	0	GL04	Anmeldung abgeschlossen		Nein			-	30.10.2025 09:19		no.mail
-17688	student257	class01	Gym-P	MU	GL	GL06	GL07	GL03	GL04	0	GL06	Anmeldung abgeschlossen		Nein			-	11.11.2025 14:06		no.mail
-17689	student272	class01	Gym-P	MU	GL	GL09	GL06	GL20	GL12	0	GL09	Anmeldung abgeschlossen		Nein			-	11.11.2025 14:06		no.mail
-17474	student289	class01	Gym-N	BG	GL	GL14	GL17	GL21	GL18	0	GL14	Anmeldung abgeschlossen		Nein			-	03.11.2025 08:19		no.mail
-17511	student003	class02	Gym-P	MU	GL	GL01	GL10	GL09	GL04	0	GL01	Anmeldung abgeschlossen		Nein			-	03.11.2025 16:20		no.mail
-17478	student011	class02	Gym-P	MU	GL	GL03	GL05	GL10	GL02	0	GL03	Anmeldung abgeschlossen		Nein			-	03.11.2025 09:35		no.mail
-17366	student037	class02	Gym-N	BG	GL	GL04	GL09	GL15	GL01	0	GL04	Anmeldung abgeschlossen		Nein			-	30.10.2025 07:36		no.mail
-17476	student040	class02	Gym-N	BG	GL	GL10	GL14	GL19	GL18	0	GL10	Anmeldung abgeschlossen		Nein			-	03.11.2025 08:31		no.mail
-17564	student081	class02	Gym-N	BG	GL	GL10	GL04	GL05	GL09	0	GL10	Anmeldung abgeschlossen		Nein			-	05.11.2025 11:57		no.mail
-17425	student082	class02	Gym-P	MU	GL	GL09	GL10	GL01	GL07	0	GL09	Anmeldung abgeschlossen		Nein			-	31.10.2025 07:47		no.mail
-17369	student087	class02	Gym-N	BG	GL	GL04	GL09	GL15	GL01	0	GL04	Anmeldung abgeschlossen		Nein			-	30.10.2025 07:40		no.mail
-17579	student108	class02	Gym-N	BG	GL	GL10	GL04	GL05	GL09	0	GL10	Anmeldung abgeschlossen		Nein			-	05.11.2025 16:34		no.mail
-17686	student109	class02	Gym-P	MU	GL	GL04	GL09	GL05	GL16	0	GL04	Anmeldung abgeschlossen		Nein			-	11.11.2025 14:05		no.mail
-17389	student119	class02	Gym-N	MU	GL	GL10	GL14	GL19	GL01	0	GL10	Anmeldung abgeschlossen		Nein			-	30.10.2025 11:39		no.mail
-17632	student127	class02	Gym-N	MU	GL	GL04	GL01	GL16	GL09	0	GL04	Anmeldung abgeschlossen		Nein			-	10.11.2025 09:30		no.mail
-17477	student129	class02	Gym-P	MU	GL	GL02	GL08	GL05	GL15	0	GL02	Anmeldung abgeschlossen		Nein			-	03.11.2025 09:34		no.mail
-17367	student139	class02	Gym-N	BG	GL	GL04	GL09	GL15	GL01	0	GL04	Anmeldung abgeschlossen		Nein			-	30.10.2025 07:36		no.mail
-17613	student160	class02	Gym-N	BG	GL	GL01	GL10	GL11	GL12	0	GL01	Anmeldung abgeschlossen		Nein			-	06.11.2025 21:06		no.mail
-17589	student165	class02	Gym-P	BG	GL	GL14	GL19	GL12	GL11	0	GL14	Anmeldung abgeschlossen		Nein			-	05.11.2025 23:11		no.mail
-17687	student182	class02	Gym-P	MU	GL	GL04	GL09	GL05	GL16	0	GL04	Anmeldung abgeschlossen		Nein			-	11.11.2025 14:06		no.mail
-17521	student196	class02	Gym-P	MU	GL	GL10	GL01	GL09	GL04	0	GL10	Anmeldung abgeschlossen		Nein			-	04.11.2025 07:32		no.mail
-17426	student199	class02	Gym-P	BG	GL	GL07	GL03	GL10	GL16	0	GL07	Anmeldung abgeschlossen		Nein			-	31.10.2025 07:52		no.mail
-17520	student205	class02	Gym-P	MU	GL	GL09	GL01	GL18	GL05	0	GL09	Anmeldung abgeschlossen		Nein			-	04.11.2025 06:40		no.mail
-17368	student210	class02	Gym-P	BG	GL	GL04	GL09	GL15	GL01	0	GL04	Anmeldung abgeschlossen		Nein			-	30.10.2025 07:39		no.mail
-17542	student250	class02	Gym-P	MU	GL	GL09	GL10	GL01	GL07	0	GL09	Anmeldung abgeschlossen		Nein			-	04.11.2025 21:21		no.mail
-17585	student277	class02	Gym-N	MU	GL	GL15	GL04	GL01	GL09	0	GL15	Anmeldung abgeschlossen		Nein			-	05.11.2025 20:33		no.mail
-17522	student280	class02	Gym-P	MU	GL	GL15	GL04	GL01	GL09	0	GL15	Anmeldung abgeschlossen		Nein			-	04.11.2025 07:33		no.mail
-17546	student004	class03	Gym-I	MU	GL	GL01	GL04	GL15	GL20	0	GL01	Anmeldung abgeschlossen		Nein			-	05.11.2025 07:44		no.mail
-17603	student013	class03	Gym-I	MU	GL	GL04	GL16	GL09	GL10	0	GL04	Anmeldung abgeschlossen		Nein			-	06.11.2025 10:43		no.mail
-17495	student043	class03	Gym-L	MU	GL	GL11	GL14	GL01	GL21	0	GL11	Anmeldung abgeschlossen		Nein			-	03.11.2025 13:00		no.mail
-17434	student049	class03	Gym-I	BG	GL	GL14	GL07	GL18	GL04	0	GL14	Anmeldung abgeschlossen		Nein			-	31.10.2025 10:40		no.mail
-17469	student050	class03	Gym-I	MU	GL	GL13	GL14	GL10	GL09	0	GL13	Anmeldung abgeschlossen		Nein			-	02.11.2025 20:13		no.mail
-17569	student052	class03	Gym-I	BG	GL	GL04	GL13	GL18	GL14	0	GL04	Anmeldung abgeschlossen		Nein			-	05.11.2025 14:22		no.mail
-17684	student074	class03	Gym-I	MU	GL	GL01	GL04	GL15	GL20	0	GL01	Anmeldung abgeschlossen		Nein			-	11.11.2025 14:04		no.mail
-17471	student077	class03	Gym-I	BG	GL	GL04	GL07	GL15	GL18	0	GL04	Anmeldung abgeschlossen		Nein			-	02.11.2025 21:27		no.mail
-17701	student095	class03	Gym-I	MU	GL	GL16	GL11	GL15	GL04	0	GL16	Anmeldung abgeschlossen		Nein			-	12.11.2025 14:32		no.mail
-17538	student101	class03	Gym-I	BG	GL	GL14	GL18	GL09	GL07	0	GL14	Anmeldung abgeschlossen		Nein			-	04.11.2025 15:23		no.mail
-17573	student107	class03	Gym-I	BG	GL	GL04	GL15	GL13	GL10	0	GL04	Anmeldung abgeschlossen		Nein			-	05.11.2025 14:48		no.mail
-17517	student110	class03	Gym-I	BG	GL	GL16	GL18	GL21	GL13	0	GL16	Anmeldung abgeschlossen		Nein			-	03.11.2025 20:19		no.mail
-17654	student114	class03	Gym-I	BG	GL	GL17	GL20	GL15	GL18	0	GL17	Anmeldung abgeschlossen		Nein			-	11.11.2025 11:15		no.mail
-17661	student126	class03	Gym-I	BG	GL	GL04	GL01	GL09	GL07	0	GL04	Anmeldung abgeschlossen		Nein			-	11.11.2025 13:56		no.mail
-17571	student128	class03	Gym-I	BG	GL	GL04	GL15	GL13	GL10	0	GL04	Anmeldung abgeschlossen		Nein			-	05.11.2025 14:32		no.mail
-17680	student162	class03	Gym-I	MU	GL	GL13	GL09	GL05	GL06	0	GL13	Anmeldung abgeschlossen		Nein			-	11.11.2025 14:03		no.mail
-17570	student179	class03	Gym-I	BG	GL	GL04	GL15	GL13	GL10	0	GL04	Anmeldung abgeschlossen		Nein			-	05.11.2025 14:32		no.mail
-17494	student184	class03	Gym-I	MU	GL	GL21	GL14	GL10	GL12	0	GL21	Anmeldung abgeschlossen		Nein			-	03.11.2025 13:00		no.mail
-17563	student191	class03	Gym-L	MU	GL	GL07	GL04	GL16	GL13	0	GL07	Anmeldung abgeschlossen		Nein			-	05.11.2025 11:13		no.mail
-17572	student225	class03	Gym-I	BG	GL	GL04	GL15	GL13	GL10	0	GL04	Anmeldung abgeschlossen		Nein			-	05.11.2025 14:48		no.mail
-17435	student230	class03	Gym-I	BG	GL	GL04	GL01	GL09	GL10	0	GL04	Anmeldung abgeschlossen		Nein			-	31.10.2025 11:50		no.mail
-17692	student251	class03	Gym-I	BG	GL	GL02	GL05	GL12	GL04	0	GL02	Anmeldung abgeschlossen		Nein			-	11.11.2025 20:14		no.mail
-17562	student288	class03	Gym-I	MU	GL	GL07	GL04	GL16	GL13	0	GL07	Anmeldung abgeschlossen		Nein			-	05.11.2025 11:13		no.mail
-17576	student005	class04	Gym-W	BG	GL	GL15	GL18	GL04	GL06	0	GL15	Anmeldung abgeschlossen		Nein			-	05.11.2025 16:14		no.mail
-17653	student006	class04	Gym-W	BG	GL	GL07	GL10	GL01	GL13	0	GL07	Anmeldung abgeschlossen		Nein			-	11.11.2025 07:26		no.mail
-17451	student023	class04	Gym-W	BG	GL	GL18	GL21	GL02	GL09	0	GL18	Anmeldung abgeschlossen		Nein			-	01.11.2025 23:22		no.mail
-17523	student032	class04	Gym-W	BG	GL	GL09	GL21	GL10	GL05	0	GL09	Anmeldung abgeschlossen		Nein			-	04.11.2025 08:56		no.mail
-17457	student044	class04	Gym-W	BG	GL	GL07	GL18	GL09	GL10	0	GL07	Anmeldung abgeschlossen		Nein			-	02.11.2025 13:11		no.mail
-17524	student045	class04	Gym-W	BG	GL	GL09	GL21	GL10	GL05	0	GL09	Anmeldung abgeschlossen		Nein			-	04.11.2025 08:56		no.mail
-17479	student053	class04	Gym-W	BG	GL	GL21	GL18	GL17	GL12	0	GL21	Anmeldung abgeschlossen		Nein			-	03.11.2025 10:39		no.mail
-17482	student064	class04	Gym-W	BG	GL	GL09	GL21	GL10	GL05	0	GL09	Anmeldung abgeschlossen		Nein			-	03.11.2025 10:43		no.mail
-17481	student075	class04	Gym-W	BG	GL	GL09	GL21	GL10	GL05	0	GL09	Anmeldung abgeschlossen		Nein			-	03.11.2025 10:43		no.mail
-17486	student105	class04	Gym-W	BG	GL	GL14	GL21	GL09	GL18	0	GL14	Anmeldung abgeschlossen		Nein			-	03.11.2025 11:09		no.mail
-17628	student125	class04	Gym-W	BG	GL	GL18	GL21	GL02	GL09	0	GL18	Anmeldung abgeschlossen		Nein			-	10.11.2025 08:46		no.mail
-17483	student145	class04	Gym-W	BG	GL	GL09	GL07	GL15	GL01	0	GL09	Anmeldung abgeschlossen		Nein			-	03.11.2025 10:45		no.mail
-17480	student150	class04	Gym-W	BG	GL	GL21	GL18	GL17	GL12	0	GL21	Anmeldung abgeschlossen		Nein			-	03.11.2025 10:39		no.mail
-17490	student204	class04	Gym-W	BG	GL	GL09	GL07	GL15	GL01	0	GL09	Anmeldung abgeschlossen		Nein			-	03.11.2025 11:18		no.mail
-17590	student218	class04	Gym-W	BG	GL	GL10	GL21	GL09	GL04	0	GL10	Anmeldung abgeschlossen		Nein			-	06.11.2025 07:27		no.mail
-17447	student224	class04	Gym-W	BG	GL	GL21	GL12	GL17	GL18	0	GL21	Anmeldung abgeschlossen		Nein			-	01.11.2025 13:45		no.mail
-17450	student228	class04	Gym-W	BG	GL	GL18	GL21	GL02	GL09	0	GL18	Anmeldung abgeschlossen		Nein			-	01.11.2025 23:22		no.mail
-17516	student232	class04	Gym-W	BG	GL	GL12	GL16	GL11	GL06	0	GL12	Anmeldung abgeschlossen		Nein			-	03.11.2025 19:38		no.mail
-17484	student252	class04	Gym-W	BG	GL	GL07	GL15	GL01	GL09	0	GL07	Anmeldung abgeschlossen		Nein			-	03.11.2025 10:45		no.mail
-17485	student267	class04	Gym-W	BG	GL	GL09	GL07	GL15	GL01	0	GL09	Anmeldung abgeschlossen		Nein			-	03.11.2025 11:07		no.mail
-17615	student276	class04	Gym-W	BG	GL	GL09	GL10	GL18	GL17	0	GL09	Anmeldung abgeschlossen		Nein			-	06.11.2025 21:22		no.mail
-17575	student284	class04	Gym-W	BG	GL	GL15	GL18	GL04	GL06	0	GL15	Anmeldung abgeschlossen		Nein			-	05.11.2025 16:14		no.mail
-17491	student291	class04	Gym-W	BG	GL	GL10	GL11	GL21	GL17	0	GL10	Anmeldung abgeschlossen		Nein			-	03.11.2025 11:19		no.mail
-17634	student007	class05	Gym-N	BG	GL	GL10	GL04	GL09	GL05	0	GL10	Anmeldung abgeschlossen		Nein			-	10.11.2025 10:09		no.mail
-17635	student009	class05	Gym-P	BG	GL	GL10	GL04	GL09	GL05	0	GL10	Anmeldung abgeschlossen		Nein			-	10.11.2025 10:10		no.mail
-17638	student039	class05	Gym-P	BG	GL	GL10	GL09	GL04	GL05	0	GL10	Anmeldung abgeschlossen		Nein			-	10.11.2025 10:11		no.mail
-17448	student051	class05	Gym-N	BG	GL	GL14	GL10	GL19	GL04	0	GL14	Anmeldung abgeschlossen		Nein			-	01.11.2025 14:57		no.mail
-17694	student093	class05	Gym-N	BG	GL	GL04	GL10	GL09	GL16	0	GL04	Anmeldung abgeschlossen		Nein			-	12.11.2025 07:57		no.mail
-17637	student096	class05	Gym-P	BG	GL	GL10	GL09	GL04	GL05	0	GL10	Anmeldung abgeschlossen		Nein			-	10.11.2025 10:11		no.mail
-17463	student116	class05	Gym-N	BG	GL	GL21	GL10	GL19	GL04	0	GL21	Anmeldung abgeschlossen		Nein			-	02.11.2025 15:00		no.mail
-17705	student118	class05	Gym-N	BG	GL	GL10	GL05	GL09	GL04	0	GL10	Anmeldung abgeschlossen		Nein			-	12.11.2025 21:55		no.mail
-17636	student121	class05	Gym-N	BG	GL	GL10	GL04	GL09	GL05	0	GL10	Anmeldung abgeschlossen		Nein			-	10.11.2025 10:10		no.mail
-17464	student140	class05	Gym-N	BG	GL	GL10	GL19	GL21	GL18	0	GL10	Anmeldung abgeschlossen		Nein			-	02.11.2025 15:20		no.mail
-17458	student170	class05	Gym-P	BG	GL	GL14	GL10	GL19	GL12	0	GL14	Anmeldung abgeschlossen		Nein			-	02.11.2025 13:16		no.mail
-17595	student175	class05	Gym-N	BG	GL	GL20	GL11	GL14	GL10	0	GL20	Anmeldung abgeschlossen		Nein			-	06.11.2025 09:06		no.mail
-17693	student177	class05	Gym-P	MU	GL	GL10	GL19	GL03	GL04	0	GL10	Anmeldung abgeschlossen		Nein			-	11.11.2025 20:22		no.mail
-17702	student202	class05	Gym-P	BG	GL	GL03	GL09	GL18	GL04	0	GL03	Anmeldung abgeschlossen		Nein			-	12.11.2025 16:11		no.mail
-17454	student220	class05	Gym-N	BG	GL	GL09	GL10	GL20	GL21	0	GL09	Anmeldung abgeschlossen		Nein			-	02.11.2025 11:51		no.mail
-17670	student222	class05	Gym-N	BG	GL	GL11	GL07	GL04	GL12	0	GL11	Anmeldung abgeschlossen		Nein			-	11.11.2025 13:58		no.mail
-17461	student237	class05	Gym-N	BG	GL	GL21	GL16	GL13	GL03	0	GL21	Anmeldung abgeschlossen		Nein			-	02.11.2025 14:10		no.mail
-17643	student264	class05	Gym-N	BG	GL	GL10	GL09	GL04	GL05	0	GL10	Anmeldung abgeschlossen		Nein			-	10.11.2025 14:05		no.mail
-17597	student275	class05	Gym-N	BG	GL	GL11	GL13	GL14	GL20	0	GL11	Anmeldung abgeschlossen		Nein			-	06.11.2025 09:07		no.mail
-17466	student281	class05	Gym-N	MU	GL	GL10	GL09	GL18	GL16	0	GL10	Anmeldung abgeschlossen		Nein			-	02.11.2025 17:32		no.mail
-17640	student008	class06	Gym-S*	BG	GL	GL10	GL08	GL09	GL02	0	GL10	Anmeldung abgeschlossen		Nein			-	10.11.2025 10:20		no.mail
-17443	student010	class06	Gym-G*	MU	GL	GL16	GL19	GL15	GL17	0	GL16	Anmeldung abgeschlossen		Nein			-	31.10.2025 17:09		no.mail
-17639	student016	class06	Gym-S*	BG	GL	GL10	GL08	GL09	GL02	0	GL10	Anmeldung abgeschlossen		Nein			-	10.11.2025 10:19		no.mail
-17583	student019	class06	Gym-G*	MU	GL	GL16	GL10	GL09	GL21	0	GL16	Anmeldung abgeschlossen		Nein			-	05.11.2025 19:11		no.mail
-17503	student073	class06	Gym-G*	MU	GL	GL12	GL09	GL16	GL19	0	GL12	Anmeldung abgeschlossen		Nein			-	03.11.2025 13:44		no.mail
-17540	student085	class06	Gym-S*	MU	GL	GL16	GL18	GL14	GL01	0	GL16	Anmeldung abgeschlossen		Nein			-	04.11.2025 19:28		no.mail
-17492	student092	class06	Gym-S*	BG	GL	GL12	GL09	GL16	GL19	0	GL12	Anmeldung abgeschlossen		Nein			-	03.11.2025 11:35		no.mail
-	student102	class06																		no.mail
-17602	student136	class06	Gym-S*	BG	GL	GL01	GL16	GL15	GL04	0	GL01	Anmeldung abgeschlossen		Nein			-	06.11.2025 10:26		no.mail
-17392	student152	class06	Gym-S*	BG	GL	GL04	GL09	GL10	GL12	0	GL04	Anmeldung abgeschlossen		Nein			-	30.10.2025 13:37		no.mail
-17439	student153	class06	Gym-S*	BG	GL	GL12	GL11	GL18	GL21	0	GL12	Anmeldung abgeschlossen		Nein			-	31.10.2025 16:21		no.mail
-17582	student158	class06	Gym-S*	BG	GL	GL16	GL10	GL09	GL21	0	GL16	Anmeldung abgeschlossen		Nein			-	05.11.2025 19:11		no.mail
-17611	student172	class06	Gym-S*	BG	GL	GL11	GL12	GL05	GL03	0	GL11	Anmeldung abgeschlossen		Nein			-	06.11.2025 17:33		no.mail
-17601	student173	class06	Gym-S*	BG	GL	GL01	GL16	GL15	GL04	0	GL01	Anmeldung abgeschlossen		Nein			-	06.11.2025 10:26		no.mail
-17505	student188	class06	Gym-S*	BG	GL	GL12	GL01	GL20	GL10	0	GL12	Anmeldung abgeschlossen		Nein			-	03.11.2025 14:03		no.mail
-17438	student193	class06	Gym-S*	BG	GL	GL12	GL11	GL18	GL21	0	GL12	Anmeldung abgeschlossen		Nein			-	31.10.2025 16:21		no.mail
-17436	student206	class06	Gym-S*	BG	GL	GL12	GL14	GL20	GL10	0	GL12	Anmeldung abgeschlossen		Nein			-	31.10.2025 14:57		no.mail
-17449	student207	class06	Gym-G*	MU	GL	GL20	GL10	GL03	GL12	0	GL20	Anmeldung abgeschlossen		Nein			-	01.11.2025 18:38		no.mail
-17383	student231	class06	Gym-S*	MU	GL	GL11	GL19	GL09	GL16	0	GL11	Anmeldung abgeschlossen		Nein			-	30.10.2025 09:55		no.mail
-17592	student241	class06	Gym-S*	BG	GL	GL10	GL09	GL05	GL01	0	GL10	Anmeldung abgeschlossen		Nein			-	06.11.2025 07:34		no.mail
-17493	student253	class06	Gym-G*	MU	GL	GL07	GL06	GL01	GL16	0	GL07	Anmeldung abgeschlossen		Nein			-	03.11.2025 12:06		no.mail
-17437	student265	class06	Gym-G*	MU	GL	GL12	GL01	GL20	GL10	0	GL12	Anmeldung abgeschlossen		Nein			-	31.10.2025 14:57		no.mail
-17440	student278	class06	Gym-S*	BG	GL	GL01	GL06	GL13	GL10	0	GL01	Anmeldung abgeschlossen		Nein			-	31.10.2025 16:26		no.mail
-17497	student012	class07	Gym-S	BG	GL	GL04	GL09	GL10	GL17	0	GL04	Anmeldung abgeschlossen		Nein			-	03.11.2025 13:18		no.mail
-17678	student017	class07	Gym-S	MU	GL	GL19	GL12	GL18	GL10	0	GL19	Anmeldung abgeschlossen		Nein			-	11.11.2025 14:02		no.mail
-17568	student021	class07	Gym-S	MU	GL	GL03	GL19	GL18	GL11	0	GL03	Anmeldung abgeschlossen		Nein			-	05.11.2025 12:49		no.mail
-17676	student065	class07	Gym-S	BG	GL	GL07	GL01	GL14	GL18	0	GL07	Anmeldung abgeschlossen		Nein			-	11.11.2025 14:01		no.mail
-	student079	class07																		no.mail
-17418	student090	class07	Gym-S	MU	GL	GL19	GL12	GL16	GL10	0	GL19	Anmeldung abgeschlossen		Nein			-	30.10.2025 19:10		no.mail
-17388	student112	class07	Gym-S	BG	GL	GL04	GL11	GL01	GL19	0	GL04	Anmeldung abgeschlossen		Nein			-	30.10.2025 11:15		no.mail
-17617	student132	class07	Gym-S	BG	GL	GL15	GL06	GL04	GL05	0	GL15	Anmeldung abgeschlossen		Nein			-	06.11.2025 21:34		no.mail
-17587	student143	class07	Gym-S	MU	GL	GL21	GL15	GL18	GL19	0	GL21	Anmeldung abgeschlossen		Nein			-	05.11.2025 21:48		no.mail
-	student146	class07																		no.mail
-17581	student163	class07	Gym-S	BG	GL	GL04	GL11	GL01	GL19	0	GL04	Anmeldung abgeschlossen		Nein			-	05.11.2025 19:11		no.mail
-17567	student183	class07	Gym-S	BG	GL	GL20	GL16	GL19	GL18	0	GL20	Anmeldung abgeschlossen		Nein			-	05.11.2025 12:48		no.mail
-17616	student190	class07	Gym-S	BG	GL	GL15	GL06	GL04	GL05	0	GL15	Anmeldung abgeschlossen		Nein			-	06.11.2025 21:34		no.mail
-17703	student195	class07	Gym-S	MU	GL	GL06	GL07	GL12	GL19	0	GL06	Anmeldung abgeschlossen		Nein			-	12.11.2025 17:12		no.mail
-17580	student211	class07	Gym-S	MU	GL	GL15	GL16	GL10	GL18	0	GL15	Anmeldung abgeschlossen		Nein			-	05.11.2025 18:12		no.mail
-17561	student214	class07	Gym-S	BG	GL	GL04	GL09	GL10	GL17	0	GL04	Anmeldung abgeschlossen		Nein			-	05.11.2025 10:26		no.mail
-17496	student219	class07	Gym-S	BG	GL	GL04	GL09	GL10	GL17	0	GL04	Anmeldung abgeschlossen		Nein			-	03.11.2025 13:18		no.mail
-17618	student263	class07	Gym-S	BG	GL	GL15	GL06	GL05	GL04	0	GL15	Anmeldung abgeschlossen		Nein			-	06.11.2025 22:10		no.mail
-	student285	class07																		no.mail
-17543	student014	class08	Gym-S	BG	GL	GL10	GL21	GL04	GL09	0	GL10	Anmeldung abgeschlossen		Nein			-	05.11.2025 07:16		no.mail
-17650	student015	class08	Gym-W	MU	GL	GL11	GL07	GL01	GL14	0	GL11	Anmeldung abgeschlossen		Nein			-	10.11.2025 17:30		no.mail
-17532	student046	class08	Gym-S	BG	GL	GL01	GL15	GL05	GL04	0	GL01	Anmeldung abgeschlossen		Nein			-	04.11.2025 11:08		no.mail
-17695	student070	class08	Gym-W	BG	GL	GL04	GL07	GL09	GL18	0	GL04	Anmeldung abgeschlossen		Nein			-	12.11.2025 10:06		no.mail
-17533	student072	class08	Gym-W	BG	GL	GL10	GL09	GL04	GL11	0	GL10	Anmeldung abgeschlossen		Nein			-	04.11.2025 11:11		no.mail
-17697	student089	class08	Gym-S	BG	GL	GL04	GL07	GL09	GL18	0	GL04	Anmeldung abgeschlossen		Nein			-	12.11.2025 10:21		no.mail
-17518	student138	class08	Gym-W	BG	GL	GL15	GL04	GL16	GL19	0	GL15	Anmeldung abgeschlossen		Nein			-	03.11.2025 20:37		no.mail
-17558	student151	class08	Gym-W	BG	GL	GL04	GL08	GL10	GL09	0	GL04	Anmeldung abgeschlossen		Nein			-	05.11.2025 09:36		no.mail
-17560	student156	class08	Gym-W	BG	GL	GL01	GL15	GL09	GL04	0	GL01	Anmeldung abgeschlossen		Nein			-	05.11.2025 09:55		no.mail
-	student164	class08																		no.mail
-17559	student180	class08	Gym-S	BG	GL	GL01	GL15	GL09	GL04	0	GL01	Anmeldung abgeschlossen		Nein			-	05.11.2025 09:55		no.mail
-17696	student212	class08	Gym-W	BG	GL	GL04	GL07	GL09	GL18	0	GL04	Anmeldung abgeschlossen		Nein			-	12.11.2025 10:06		no.mail
-17530	student229	class08	Gym-S	BG	GL	GL16	GL21	GL18	GL11	0	GL16	Anmeldung abgeschlossen		Nein			-	04.11.2025 11:07		no.mail
-17545	student242	class08	Gym-W	BG	GL	GL04	GL08	GL10	GL09	0	GL04	Anmeldung abgeschlossen		Nein			-	05.11.2025 07:19		no.mail
-17446	student247	class08	Gym-S	BG	GL	GL21	GL12	GL17	GL18	0	GL21	Anmeldung abgeschlossen		Nein			-	01.11.2025 13:36		no.mail
-17531	student262	class08	Gym-S	BG	GL	GL01	GL15	GL05	GL04	0	GL01	Anmeldung abgeschlossen		Nein			-	04.11.2025 11:08		no.mail
-17534	student286	class08	Gym-W	BG	GL	GL10	GL09	GL04	GL11	0	GL10	Anmeldung abgeschlossen		Nein			-	04.11.2025 11:11		no.mail
-17666	student290	class08	Gym-W	BG	GL	GL10	GL05	GL09	GL04	0	GL10	Anmeldung abgeschlossen		Nein			-	11.11.2025 13:57		no.mail
-17513	student022	class09	Gym-G	MU	GL	GL12	GL11	GL16	GL15	0	GL12	Anmeldung abgeschlossen		Nein			-	03.11.2025 16:55		no.mail
-17593	student029	class09	Gym-G	MU	GL	GL10	GL09	GL18	GL16	0	GL10	Anmeldung abgeschlossen		Nein			-	06.11.2025 08:32		no.mail
-17578	student033	class09	Gym-G	MU	GL	GL12	GL13	GL20	GL21	0	GL12	Anmeldung abgeschlossen		Nein			-	05.11.2025 16:34		no.mail
-17690	student035	class09	Gym-G	MU	GL	GL16	GL12	GL13	GL07	0	GL16	Anmeldung abgeschlossen		Nein			-	11.11.2025 14:06		no.mail
-17629	student038	class09	Gym-G	MU	GL	GL10	GL12	GL14	GL11	0	GL10	Anmeldung abgeschlossen		Nein			-	10.11.2025 09:24		no.mail
-17514	student042	class09	Gym-G	MU	GL	GL12	GL11	GL16	GL15	0	GL12	Anmeldung abgeschlossen		Nein			-	03.11.2025 16:55		no.mail
-17541	student059	class09	Gym-G	MU	GL	GL09	GL13	GL10	GL17	0	GL09	Anmeldung abgeschlossen		Nein			-	04.11.2025 19:55		no.mail
-17577	student060	class09	Gym-G	MU	GL	GL12	GL13	GL20	GL21	0	GL12	Anmeldung abgeschlossen		Nein			-	05.11.2025 16:34		no.mail
-17527	student061	class09	Gym-G	MU	GL	GL15	GL18	GL07	GL04	0	GL15	Anmeldung abgeschlossen		Nein			-	04.11.2025 10:54		no.mail
-17460	student069	class09	Gym-G	MU	GL	GL10	GL09	GL18	GL16	0	GL10	Anmeldung abgeschlossen		Nein			-	02.11.2025 13:45		no.mail
-17679	student080	class09	Gym-G	MU	GL	GL12	GL11	GL16	GL15	0	GL12	Anmeldung abgeschlossen		Nein			-	11.11.2025 14:03		no.mail
-	student091	class09																		no.mail
-17459	student094	class09	Gym-G	MU	GL	GL10	GL09	GL18	GL16	0	GL10	Anmeldung abgeschlossen		Nein			-	02.11.2025 13:45		no.mail
-17630	student122	class09	Gym-G	MU	GL	GL16	GL21	GL10	GL19	0	GL16	Anmeldung abgeschlossen		Nein			-	10.11.2025 09:29		no.mail
-17594	student149	class09	Gym-G	MU	GL	GL10	GL09	GL18	GL16	0	GL10	Anmeldung abgeschlossen		Nein			-	06.11.2025 08:32		no.mail
-	student168	class09																		no.mail
-17529	student194	class09	Gym-G	MU	GL	GL15	GL18	GL07	GL10	0	GL15	Anmeldung abgeschlossen		Nein			-	04.11.2025 11:00		no.mail
-17682	student215	class09	Gym-G	MU	GL	GL15	GL16	GL01	GL10	0	GL15	Anmeldung abgeschlossen		Nein			-	11.11.2025 14:04		no.mail
-17584	student226	class09	Gym-G	MU	GL	GL10	GL16	GL04	GL13	0	GL10	Anmeldung abgeschlossen		Nein			-	05.11.2025 19:39		no.mail
-17631	student248	class09	Gym-G	MU	GL	GL16	GL21	GL10	GL19	0	GL16	Anmeldung abgeschlossen		Nein			-	10.11.2025 09:30		no.mail
-17512	student256	class09	Gym-G	MU	GL	GL12	GL16	GL18	GL10	0	GL12	Anmeldung abgeschlossen		Nein			-	03.11.2025 16:45		no.mail
-17528	student260	class09	Gym-G	MU	GL	GL15	GL18	GL07	GL04	0	GL15	Anmeldung abgeschlossen		Nein			-	04.11.2025 10:54		no.mail
-17456	student269	class09	Gym-G	MU	GL	GL12	GL19	GL21	GL17	0	GL12	Anmeldung abgeschlossen		Nein			-	02.11.2025 13:08		no.mail
-17550	student024	class10	Gym-W*	BG	GL	GL06	GL15	GL11	GL19	0	GL06	Anmeldung abgeschlossen		Nein			-	05.11.2025 07:47		no.mail
-17671	student047	class10	Gym-W*	BG	GL	GL14	GL19	GL15	GL17	0	GL14	Anmeldung abgeschlossen		Nein			-	11.11.2025 13:59		no.mail
-17551	student048	class10	Gym-W*	BG	GL	GL09	GL21	GL17	GL11	0	GL09	Anmeldung abgeschlossen		Nein			-	05.11.2025 07:48		no.mail
-17554	student063	class10	Gym-L*	MU	GL	GL03	GL16	GL07	GL04	0	GL03	Anmeldung abgeschlossen		Nein			-	05.11.2025 08:09		no.mail
-17552	student078	class10	Gym-W*	BG	GL	GL12	GL01	GL08	GL14	0	GL12	Anmeldung abgeschlossen		Nein			-	05.11.2025 07:53		no.mail
-17652	student106	class10	Gym-W*	BG	GL	GL07	GL04	GL16	GL10	0	GL07	Anmeldung abgeschlossen		Nein			-	10.11.2025 20:34		no.mail
-17553	student131	class10	Gym-L*	BG	GL	GL12	GL01	GL08	GL14	0	GL12	Anmeldung abgeschlossen		Nein			-	05.11.2025 07:53		no.mail
-17663	student134	class10	Gym-W*	BG	GL	GL09	GL19	GL21	GL15	0	GL09	Anmeldung abgeschlossen		Nein			-	11.11.2025 13:57		no.mail
-17445	student178	class10	Gym-L*	BG	GL	GL07	GL03	GL10	GL08	0	GL07	Anmeldung abgeschlossen		Nein			-	01.11.2025 10:29		no.mail
-17556	student198	class10	Gym-L*	BG	GL	GL16	GL19	GL12	GL10	0	GL16	Anmeldung abgeschlossen		Nein			-	05.11.2025 08:33		no.mail
-17548	student201	class10	Gym-W*	BG	GL	GL11	GL02	GL08	GL18	0	GL11	Anmeldung abgeschlossen		Nein			-	05.11.2025 07:44		no.mail
-17557	student203	class10	Gym-W*	MU	GL	GL06	GL02	GL11	GL18	0	GL06	Anmeldung abgeschlossen		Nein			-	05.11.2025 08:34		no.mail
-17547	student217	class10	Gym-W*	BG	GL	GL05	GL09	GL10	GL03	0	GL05	Anmeldung abgeschlossen		Nein			-	05.11.2025 07:44		no.mail
-17707	student234	class10	Gym-L*	BG	GL	GL19	GL20	GL14	GL01	0	GL19	Anmeldung abgeschlossen		Nein			-	13.11.2025 07:26		no.mail
-17472	student239	class10	Gym-W*	BG	GL	GL09	GL19	GL15	GL06	0	GL09	Anmeldung abgeschlossen		Nein			-	03.11.2025 08:04		no.mail
-17455	student245	class10	Gym-L*	BG	GL	GL06	GL11	GL12	GL18	0	GL06	Anmeldung abgeschlossen		Nein			-	02.11.2025 12:12		no.mail
-17549	student273	class10	Gym-W*	BG	GL	GL16	GL07	GL13	GL01	0	GL16	Anmeldung abgeschlossen		Nein			-	05.11.2025 07:46		no.mail
-17416	student274	class10	Gym-W*	MU	GL	GL13	GL09	GL16	GL10	0	GL13	Anmeldung abgeschlossen		Nein			-	30.10.2025 17:10		no.mail
-17432	student026	class11	Gym-N	MU	GL	GL09	GL10	GL04	GL07	0	GL09	Anmeldung abgeschlossen		Nein			-	31.10.2025 09:36		no.mail
-17668	student027	class11	Gym-N	BG	GL	GL10	GL21	GL16	GL17	0	GL10	Anmeldung abgeschlossen		Nein			-	11.11.2025 13:58		no.mail
-17677	student041	class11	Gym-P	BG	GL	GL21	GL10	GL02	GL08	0	GL21	Anmeldung abgeschlossen		Nein			-	11.11.2025 14:02		no.mail
-17667	student084	class11	Gym-P	BG	GL	GL10	GL21	GL16	GL17	0	GL10	Anmeldung abgeschlossen		Nein			-	11.11.2025 13:58		no.mail
-17413	student117	class11	Gym-N	BG	GL	GL04	GL10	GL01	GL09	0	GL04	Anmeldung abgeschlossen		Nein			-	30.10.2025 16:47		no.mail
-17393	student130	class11	Gym-N	BG	GL	GL14	GL17	GL16	GL10	0	GL14	Anmeldung abgeschlossen		Nein			-	30.10.2025 14:39		no.mail
-17662	student142	class11	Gym-N	BG	GL	GL04	GL15	GL10	GL16	0	GL04	Anmeldung abgeschlossen		Nein			-	11.11.2025 13:56		no.mail
-17410	student144	class11	Gym-P	BG	GL	GL09	GL10	GL04	GL07	0	GL09	Anmeldung abgeschlossen		Nein			-	30.10.2025 16:46		no.mail
-17664	student167	class11	Gym-N	BG	GL	GL10	GL21	GL16	GL01	0	GL10	Anmeldung abgeschlossen		Nein			-	11.11.2025 13:57		no.mail
-17415	student171	class11	Gym-N	BG	GL	GL16	GL12	GL19	GL03	0	GL16	Anmeldung abgeschlossen		Nein			-	30.10.2025 16:48		no.mail
-17672	student176	class11	Gym-N	BG	GL	GL16	GL11	GL17	GL04	0	GL16	Anmeldung abgeschlossen		Nein				11.11.2025 13:59		no.mail
-17407	student197	class11	Gym-P	MU	GL	GL09	GL10	GL04	GL07	0	GL09	Anmeldung abgeschlossen		Nein			-	30.10.2025 16:46		no.mail
-17660	student200	class11	Gym-P	BG	GL	GL01	GL03	GL16	GL21	0	GL01	Anmeldung abgeschlossen		Nein				11.11.2025 13:55		no.mail
-17412	student221	class11	Gym-N	BG	GL	GL04	GL10	GL01	GL09	0	GL04	Anmeldung abgeschlossen		Nein			-	30.10.2025 16:47		no.mail
-17414	student223	class11	Gym-N	BG	GL	GL07	GL10	GL04	GL16	0	GL07	Anmeldung abgeschlossen		Nein			-	30.10.2025 16:47		no.mail
-17408	student233	class11	Gym-P	BG	GL	GL09	GL10	GL04	GL07	0	GL09	Anmeldung abgeschlossen		Nein			-	30.10.2025 16:46		no.mail
-17411	student240	class11	Gym-N	BG	GL	GL15	GL10	GL09	GL04	0	GL15	Anmeldung abgeschlossen		Nein			-	30.10.2025 16:46		no.mail
-17390	student243	class11	Gym-N	BG	GL	GL19	GL14	GL16	GL05	0	GL19	Anmeldung abgeschlossen		Nein			-	30.10.2025 12:28		no.mail
-17665	student258	class11	Gym-P	BG	GL	GL10	GL16	GL01	GL20	0	GL10	Anmeldung abgeschlossen		Nein			-	11.11.2025 13:57		no.mail
-17409	student287	class11	Gym-P	MU	GL	GL09	GL10	GL04	GL07	0	GL09	Anmeldung abgeschlossen		Nein			-	30.10.2025 16:46		no.mail
-17391	student028	class12	Gym-W	MU	GL	GL04	GL09	GL10	GL14	0	GL04	Anmeldung abgeschlossen		Nein			-	30.10.2025 13:31		no.mail
-17704	student030	class12	Gym-W	BG	GL	GL16	GL07	GL10	GL01	0	GL16	Anmeldung abgeschlossen		Nein			-	12.11.2025 19:22		no.mail
-17608	student062	class12	Gym-W	BG	GL	GL06	GL09	GL10	GL07	0	GL06	Anmeldung abgeschlossen		Nein			-	06.11.2025 12:09		no.mail
-17370	student071	class12	Gym-M	BG	GL	GL20	GL12	GL16	GL18	0	GL20	Anmeldung abgeschlossen		Nein			-	30.10.2025 08:03		no.mail
-17642	student076	class12	Gym-M	BG	GL	GL07	GL04	GL03	GL09	0	GL07	Anmeldung abgeschlossen		Nein			-	10.11.2025 13:42		no.mail
-17377	student088	class12	Gym-W	BG	GL	GL04	GL09	GL10	GL14	0	GL04	Anmeldung abgeschlossen		Nein			-	30.10.2025 09:44		no.mail
-17605	student099	class12	Gym-M	BG	GL	GL21	GL10	GL17	GL09	0	GL21	Anmeldung abgeschlossen		Nein			-	06.11.2025 11:31		no.mail
-17384	student133	class12	Gym-W	BG	GL	GL06	GL09	GL10	GL07	0	GL06	Anmeldung abgeschlossen		Nein			-	30.10.2025 10:00		no.mail
-17378	student137	class12	Gym-W	BG	GL	GL04	GL09	GL10	GL14	0	GL04	Anmeldung abgeschlossen		Nein			-	30.10.2025 09:44		no.mail
-17371	student154	class12	Gym-W	MU	GL	GL20	GL12	GL16	GL18	0	GL20	Anmeldung abgeschlossen		Nein			-	30.10.2025 08:03		no.mail
-17591	student157	class12	Gym-M	BG	GL	GL09	GL10	GL12	GL17	0	GL09	Anmeldung abgeschlossen		Nein			-	06.11.2025 07:34		no.mail
-17544	student189	class12	Gym-W	BG	GL	GL04	GL08	GL10	GL09	0	GL04	Anmeldung abgeschlossen		Nein			-	05.11.2025 07:18		no.mail
-17606	student192	class12	Gym-M	BG	GL	GL21	GL10	GL17	GL09	0	GL21	Anmeldung abgeschlossen		Nein			-	06.11.2025 11:31		no.mail
-17586	student208	class12	Gym-M	BG	GL	GL10	GL19	GL04	GL03	0	GL10	Anmeldung abgeschlossen		Nein			-	05.11.2025 21:15		no.mail
-17386	student209	class12	Gym-W	BG	GL	GL06	GL09	GL10	GL07	0	GL06	Anmeldung abgeschlossen		Nein			-	30.10.2025 10:00		no.mail
-17600	student213	class12	Gym-M	BG	GL	GL14	GL12	GL20	GL19	0	GL14	Anmeldung abgeschlossen		Nein			-	06.11.2025 10:05		no.mail
-17607	student227	class12	Gym-W	BG	GL	GL06	GL09	GL10	GL07	0	GL06	Anmeldung abgeschlossen		Nein			-	06.11.2025 12:08		no.mail
-17452	student235	class12	Gym-M	BG	GL	GL08	GL04	GL07	GL09	0	GL08	Anmeldung abgeschlossen		Nein			-	02.11.2025 09:47		no.mail
-17641	student249	class12	Gym-M	BG	GL	GL09	GL07	GL10	GL04	0	GL09	Anmeldung abgeschlossen		Nein			-	10.11.2025 13:41		no.mail
-17599	student259	class12	Gym-M	BG	GL	GL02	GL03	GL11	GL19	0	GL02	Anmeldung abgeschlossen		Nein			-	06.11.2025 10:04		no.mail
-17379	student261	class12	Gym-W	BG	GL	GL04	GL09	GL10	GL14	0	GL04	Anmeldung abgeschlossen		Nein			-	30.10.2025 09:44		no.mail
-17598	student266	class12	Gym-M	BG	GL	GL02	GL03	GL11	GL19	0	GL02	Anmeldung abgeschlossen		Nein			-	06.11.2025 10:04		no.mail
-17385	student268	class12	Gym-W	BG	GL	GL06	GL09	GL10	GL07	0	GL06	Anmeldung abgeschlossen		Nein			-	30.10.2025 10:00		no.mail
-17574	student031	class13	Gym-P**	MU	GL	GL12	GL20	GL19	GL21	0	GL12	Anmeldung abgeschlossen		Nein			-	05.11.2025 15:59		no.mail
-17610	student056	class13	Gym-P**	MU	GL	GL09	GL16	GL10	GL13	0	GL09	Anmeldung abgeschlossen		Nein			-	06.11.2025 12:47		no.mail
-17609	student057	class13	Gym-N**	BG	GL	GL09	GL16	GL10	GL13	0	GL09	Anmeldung abgeschlossen		Nein			-	06.11.2025 12:46		no.mail
-17453	student058	class13	Gym-P**	MU	GL	GL06	GL01	GL20	GL03	0	GL06	Anmeldung abgeschlossen		Nein			-	02.11.2025 10:27		no.mail
-	student068	class13																		no.mail
-17596	student111	class13	Gym-P**	MU	GL	GL15	GL07	GL18	GL04	0	GL15	Anmeldung abgeschlossen		Nein			-	06.11.2025 09:06		no.mail
-17387	student135	class13	Gym-N**	BG	GL	GL18	GL21	GL10	GL16	0	GL18	Anmeldung abgeschlossen		Nein			-	30.10.2025 11:09		no.mail
-17648	student141	class13	Gym-N**	MU	GL	GL02	GL04	GL11	GL01	0	GL02	Anmeldung abgeschlossen		Nein			-	10.11.2025 15:09		no.mail
-17673	student181	class13	Gym-N**	BG	GL	GL16	GL04	GL10	GL21	0	GL16	Anmeldung abgeschlossen		Nein			-	11.11.2025 13:59		no.mail
-17537	student236	class13	Gym-N**	BG	GL	GL16	GL10	GL11	GL12	0	GL16	Anmeldung abgeschlossen		Nein			-	04.11.2025 11:34		no.mail
-17535	student246	class13	Gym-N**	BG	GL	GL04	GL16	GL21	GL17	0	GL04	Anmeldung abgeschlossen		Nein			-	04.11.2025 11:24		no.mail
-17536	student254	class13	Gym-N**	BG	GL	GL04	GL16	GL21	GL17	0	GL04	Anmeldung abgeschlossen		Nein			-	04.11.2025 11:24		no.mail
-17699	student270	class13	Gym-N**	BG	GL	GL06	GL17	GL07	GL03	0	GL06	Anmeldung abgeschlossen		Nein			-	12.11.2025 13:38		no.mail
-17698	student271	class13	Gym-N**	BG	GL	GL04	GL16	GL10	GL21	0	GL04	Anmeldung abgeschlossen		Nein			-	12.11.2025 12:05		no.mail
+Name	Klasse	1. Wahl	2. Wahl	3. Wahl	4. Wahl
+student000	class00	GL01	GL16	GL15	GL04
+student018	class00	GL16	GL18	GL14	GL01
+student053	class00	GL04	GL09	GL10	GL12
+student063	class00	GL10	GL08	GL09	GL02
+student073	class00	GL10	GL08	GL09	GL02
+student085	class00	GL01	GL16	GL15	GL04
+student086	class00	GL12	GL11	GL18	GL21
+student091	class00	GL11	GL12	GL05	GL03
+student094	class00	GL12	GL11	GL18	GL21
+student107	class00	GL12	GL01	GL20	GL10
+student132	class00				
+student143	class00	GL12	GL09	GL16	GL19
+student156	class00	GL16	GL10	GL09	GL21
+student157	class00	GL01	GL06	GL13	GL10
+student171	class00	GL12	GL09	GL16	GL19
+student186	class00	GL11	GL19	GL09	GL16
+student191	class00	GL10	GL09	GL05	GL01
+student201	class00	GL16	GL10	GL09	GL21
+student202	class00	GL20	GL10	GL03	GL12
+student220	class00	GL16	GL19	GL15	GL17
+student223	class00	GL12	GL14	GL20	GL10
+student254	class00	GL07	GL06	GL01	GL16
+student285	class00	GL12	GL01	GL20	GL10
+student001	class01	GL07	GL04	GL16	GL13
+student023	class01	GL04	GL15	GL13	GL10
+student026	class01	GL04	GL13	GL18	GL14
+student037	class01	GL04	GL15	GL13	GL10
+student042	class01	GL01	GL04	GL15	GL20
+student081	class01	GL11	GL14	GL01	GL21
+student096	class01	GL16	GL18	GL21	GL13
+student105	class01	GL04	GL15	GL13	GL10
+student122	class01	GL17	GL20	GL15	GL18
+student127	class01	GL04	GL01	GL09	GL10
+student128	class01	GL04	GL16	GL09	GL10
+student135	class01	GL04	GL15	GL13	GL10
+student137	class01	GL21	GL14	GL10	GL12
+student142	class01	GL04	GL01	GL09	GL07
+student158	class01	GL14	GL18	GL09	GL07
+student160	class01	GL01	GL04	GL15	GL20
+student165	class01	GL13	GL14	GL10	GL09
+student192	class01	GL13	GL09	GL05	GL06
+student205	class01	GL07	GL04	GL16	GL13
+student216	class01	GL02	GL05	GL12	GL04
+student229	class01	GL14	GL07	GL18	GL04
+student240	class01	GL04	GL07	GL15	GL18
+student267	class01	GL16	GL11	GL15	GL04
+student002	class02	GL20	GL16	GL19	GL18
+student014	class02	GL19	GL12	GL18	GL10
+student028	class02	GL21	GL15	GL18	GL19
+student034	class02	GL04	GL09	GL10	GL17
+student038	class02	GL06	GL07	GL12	GL19
+student049	class02	GL03	GL19	GL18	GL11
+student055	class02	GL04	GL09	GL10	GL17
+student072	class02	GL15	GL06	GL04	GL05
+student075	class02	GL07	GL01	GL14	GL18
+student082	class02	GL04	GL11	GL01	GL19
+student087	class02				
+student170	class02	GL19	GL12	GL16	GL10
+student173	class02	GL15	GL16	GL10	GL18
+student183	class02	GL04	GL09	GL10	GL17
+student209	class02				
+student211	class02	GL04	GL11	GL01	GL19
+student226	class02	GL15	GL06	GL05	GL04
+student250	class02				
+student274	class02	GL15	GL06	GL04	GL05
+student003	class03	GL21	GL10	GL02	GL08
+student016	class03	GL16	GL11	GL17	GL04
+student064	class03	GL10	GL21	GL16	GL01
+student076	class03	GL10	GL16	GL01	GL20
+student098	class03	GL04	GL10	GL01	GL09
+student102	class03	GL09	GL10	GL04	GL07
+student108	class03	GL09	GL10	GL04	GL07
+student109	class03	GL15	GL10	GL09	GL04
+student118	class03	GL04	GL10	GL01	GL09
+student121	class03	GL10	GL21	GL16	GL17
+student148	class03	GL09	GL10	GL04	GL07
+student164	class03	GL16	GL12	GL19	GL03
+student172	class03	GL04	GL15	GL10	GL16
+student195	class03	GL14	GL17	GL16	GL10
+student197	class03	GL10	GL21	GL16	GL17
+student200	class03	GL07	GL10	GL04	GL16
+student219	class03	GL09	GL10	GL04	GL07
+student239	class03	GL01	GL03	GL16	GL21
+student262	class03	GL19	GL14	GL16	GL05
+student280	class03	GL09	GL10	GL04	GL07
+student004	class04	GL20	GL11	GL14	GL10
+student031	class04	GL21	GL10	GL19	GL04
+student036	class04	GL04	GL10	GL09	GL16
+student052	class04	GL10	GL04	GL09	GL05
+student100	class04	GL10	GL09	GL18	GL16
+student111	class04	GL10	GL04	GL09	GL05
+student113	class04	GL03	GL09	GL18	GL04
+student124	class04	GL10	GL19	GL03	GL04
+student150	class04	GL09	GL10	GL20	GL21
+student153	class04	GL10	GL09	GL04	GL05
+student176	class04	GL10	GL09	GL04	GL05
+student212	class04	GL10	GL19	GL21	GL18
+student221	class04	GL10	GL05	GL09	GL04
+student230	class04	GL21	GL16	GL13	GL03
+student233	class04	GL10	GL04	GL09	GL05
+student237	class04	GL14	GL10	GL19	GL04
+student241	class04	GL14	GL10	GL19	GL12
+student253	class04	GL11	GL07	GL04	GL12
+student286	class04	GL10	GL09	GL04	GL05
+student289	class04	GL11	GL13	GL14	GL20
+student005	class05	GL16	GL03	GL12	GL01
+student006	class05	GL10	GL01	GL09	GL16
+student030	class05	GL16	GL10	GL08	GL11
+student093	class05	GL14	GL19	GL17	GL10
+student112	class05	GL06	GL04	GL09	GL07
+student115	class05	GL16	GL14	GL19	GL10
+student133	class05	GL10	GL01	GL09	GL16
+student139	class05	GL14	GL16	GL12	GL20
+student163	class05	GL06	GL07	GL03	GL04
+student166	class05	GL06	GL04	GL09	GL07
+student175	class05	GL01	GL14	GL19	GL03
+student177	class05	GL16	GL07	GL19	GL10
+student181	class05	GL01	GL14	GL19	GL03
+student184	class05	GL09	GL06	GL20	GL12
+student188	class05	GL04	GL09	GL07	GL10
+student231	class05	GL14	GL18	GL16	GL21
+student245	class05	GL07	GL16	GL10	GL13
+student259	class05	GL06	GL04	GL09	GL07
+student263	class05	GL16	GL14	GL10	GL18
+student275	class05	GL16	GL13	GL20	GL10
+student276	class05				
+student277	class05	GL14	GL17	GL21	GL18
+student007	class06	GL21	GL10	GL17	GL09
+student009	class06	GL06	GL09	GL10	GL07
+student019	class06	GL10	GL19	GL04	GL03
+student033	class06	GL04	GL09	GL10	GL14
+student041	class06	GL04	GL09	GL10	GL14
+student045	class06	GL06	GL09	GL10	GL07
+student050	class06	GL08	GL04	GL07	GL09
+student051	class06	GL09	GL10	GL12	GL17
+student060	class06	GL14	GL12	GL20	GL19
+student062	class06	GL09	GL07	GL10	GL04
+student084	class06	GL02	GL03	GL11	GL19
+student095	class06	GL02	GL03	GL11	GL19
+student116	class06	GL06	GL09	GL10	GL07
+student131	class06	GL20	GL12	GL16	GL18
+student138	class06	GL06	GL09	GL10	GL07
+student149	class06	GL20	GL12	GL16	GL18
+student154	class06	GL07	GL04	GL03	GL09
+student169	class06	GL21	GL10	GL17	GL09
+student198	class06	GL04	GL09	GL10	GL14
+student208	class06	GL04	GL08	GL10	GL09
+student242	class06	GL16	GL07	GL10	GL01
+student247	class06	GL06	GL09	GL10	GL07
+student266	class06	GL04	GL09	GL10	GL14
+student008	class07	GL10	GL21	GL04	GL09
+student025	class07	GL10	GL05	GL09	GL04
+student046	class07	GL01	GL15	GL09	GL04
+student066	class07	GL15	GL04	GL16	GL19
+student069	class07	GL04	GL07	GL09	GL18
+student101	class07	GL21	GL12	GL17	GL18
+student114	class07	GL16	GL21	GL18	GL11
+student125	class07	GL04	GL07	GL09	GL18
+student155	class07	GL04	GL08	GL10	GL09
+student214	class07	GL10	GL09	GL04	GL11
+student218	class07	GL10	GL09	GL04	GL11
+student238	class07	GL04	GL08	GL10	GL09
+student248	class07	GL01	GL15	GL05	GL04
+student255	class07	GL11	GL07	GL01	GL14
+student257	class07	GL01	GL15	GL05	GL04
+student261	class07	GL01	GL15	GL09	GL04
+student281	class07				
+student284	class07	GL04	GL07	GL09	GL18
+student010	class08	GL06	GL15	GL11	GL19
+student044	class08	GL05	GL09	GL10	GL03
+student106	class08	GL14	GL19	GL15	GL17
+student110	class08	GL06	GL02	GL11	GL18
+student117	class08	GL12	GL01	GL08	GL14
+student119	class08	GL16	GL07	GL13	GL01
+student136	class08	GL09	GL21	GL17	GL11
+student140	class08	GL13	GL09	GL16	GL10
+student151	class08	GL11	GL02	GL08	GL18
+student187	class08	GL12	GL01	GL08	GL14
+student189	class08	GL19	GL20	GL14	GL01
+student190	class08	GL16	GL19	GL12	GL10
+student228	class08	GL09	GL19	GL15	GL06
+student236	class08	GL06	GL11	GL12	GL18
+student260	class08	GL07	GL03	GL10	GL08
+student265	class08	GL03	GL16	GL07	GL04
+student290	class08	GL07	GL04	GL16	GL10
+student291	class08	GL09	GL19	GL21	GL15
+student011	class09	GL18	GL21	GL10	GL16
+student013	class09	GL16	GL04	GL10	GL21
+student039	class09	GL04	GL16	GL21	GL17
+student077	class09	GL04	GL16	GL10	GL21
+student099	class09	GL06	GL01	GL20	GL03
+student134	class09	GL09	GL16	GL10	GL13
+student144	class09	GL09	GL16	GL10	GL13
+student174	class09	GL04	GL16	GL21	GL17
+student180	class09	GL02	GL04	GL11	GL01
+student206	class09	GL12	GL20	GL19	GL21
+student270	class09	GL16	GL10	GL11	GL12
+student278	class09				
+student279	class09	GL06	GL17	GL07	GL03
+student288	class09	GL15	GL07	GL18	GL04
+student012	class10	GL12	GL16	GL18	GL10
+student021	class10	GL12	GL19	GL21	GL17
+student059	class10	GL10	GL09	GL18	GL16
+student070	class10	GL16	GL21	GL10	GL19
+student080	class10	GL10	GL16	GL04	GL13
+student083	class10	GL12	GL13	GL20	GL21
+student097	class10	GL15	GL18	GL07	GL10
+student129	class10				
+student145	class10	GL16	GL21	GL10	GL19
+student161	class10	GL10	GL09	GL18	GL16
+student162	class10	GL10	GL09	GL18	GL16
+student193	class10	GL10	GL12	GL14	GL11
+student199	class10				
+student213	class10	GL12	GL11	GL16	GL15
+student215	class10	GL12	GL11	GL16	GL15
+student227	class10	GL16	GL12	GL13	GL07
+student234	class10	GL15	GL18	GL07	GL04
+student243	class10	GL10	GL09	GL18	GL16
+student264	class10	GL15	GL18	GL07	GL04
+student272	class10	GL12	GL13	GL20	GL21
+student273	class10	GL15	GL16	GL01	GL10
+student283	class10	GL12	GL11	GL16	GL15
+student287	class10	GL09	GL13	GL10	GL17
+student015	class11	GL07	GL18	GL09	GL10
+student032	class11	GL10	GL21	GL09	GL04
+student040	class11	GL21	GL12	GL17	GL18
+student047	class11	GL09	GL21	GL10	GL05
+student048	class11	GL18	GL21	GL02	GL09
+student056	class11	GL09	GL07	GL15	GL01
+student058	class11	GL14	GL21	GL09	GL18
+student065	class11	GL12	GL16	GL11	GL06
+student088	class11	GL07	GL10	GL01	GL13
+student089	class11	GL15	GL18	GL04	GL06
+student092	class11	GL09	GL21	GL10	GL05
+student130	class11	GL07	GL15	GL01	GL09
+student159	class11	GL21	GL18	GL17	GL12
+student179	class11	GL09	GL07	GL15	GL01
+student196	class11	GL09	GL21	GL10	GL05
+student204	class11	GL18	GL21	GL02	GL09
+student210	class11	GL09	GL10	GL18	GL17
+student222	class11	GL21	GL18	GL17	GL12
+student235	class11	GL10	GL11	GL21	GL17
+student244	class11	GL15	GL18	GL04	GL06
+student249	class11	GL09	GL21	GL10	GL05
+student252	class11	GL09	GL07	GL15	GL01
+student269	class11	GL18	GL21	GL02	GL09
+student017	class12	GL04	GL09	GL15	GL01
+student020	class12	GL04	GL01	GL16	GL09
+student024	class12	GL14	GL19	GL12	GL11
+student027	class12	GL09	GL10	GL01	GL07
+student043	class12	GL10	GL04	GL05	GL09
+student061	class12	GL04	GL09	GL15	GL01
+student079	class12	GL01	GL10	GL09	GL04
+student104	class12	GL04	GL09	GL05	GL16
+student120	class12	GL07	GL03	GL10	GL16
+student123	class12	GL09	GL10	GL01	GL07
+student141	class12	GL10	GL14	GL19	GL01
+student146	class12	GL04	GL09	GL15	GL01
+student147	class12	GL04	GL09	GL05	GL16
+student167	class12	GL02	GL08	GL05	GL15
+student194	class12	GL15	GL04	GL01	GL09
+student203	class12	GL15	GL04	GL01	GL09
+student217	class12	GL10	GL01	GL09	GL04
+student232	class12	GL10	GL14	GL19	GL18
+student246	class12	GL09	GL01	GL18	GL05
+student251	class12	GL04	GL09	GL15	GL01
+student256	class12	GL10	GL04	GL05	GL09
+student268	class12	GL01	GL10	GL11	GL12
+student282	class12	GL03	GL05	GL10	GL02
+student022	class13	GL20	GL10	GL01	GL15
+student029	class13	GL15	GL07	GL04	GL02
+student035	class13	GL14	GL16	GL10	GL21
+student054	class13	GL03	GL10	GL16	GL21
+student057	class13	GL20	GL10	GL01	GL15
+student067	class13	GL15	GL07	GL04	GL02
+student068	class13	GL21	GL18	GL16	GL17
+student071	class13	GL14	GL16	GL10	GL21
+student074	class13	GL20	GL10	GL01	GL15
+student078	class13	GL21	GL18	GL16	GL17
+student090	class13	GL15	GL07	GL04	GL21
+student103	class13	GL21	GL18	GL16	GL17
+student126	class13	GL16	GL13	GL10	GL06
+student152	class13	GL14	GL16	GL10	GL21
+student168	class13	GL16	GL21	GL13	GL03
+student178	class13	GL21	GL18	GL16	GL17
+student182	class13	GL15	GL07	GL04	GL02
+student185	class13	GL16	GL04	GL10	GL06
+student207	class13	GL14	GL16	GL10	GL21
+student224	class13	GL14	GL16	GL10	GL21
+student225	class13	GL14	GL16	GL10	GL21
+student258	class13	GL07	GL10	GL01	GL13
+student271	class13	GL14	GL16	GL10	GL21
