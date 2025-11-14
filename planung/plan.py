@@ -287,9 +287,14 @@ class Plan:
             print("✅ Alle Teilnehmer sind eingeplant.")
         else:
             print(f" Total sind {totalUnplanned} Teilnehmer nicht vollständig oder mit Mehrfachbsuch eingeplant")
+
+        legende = ["keine Wahl", "nur 4. Wahl", "nur 3. Wahl", "3. & 4. Wahl", "nur 2. Wahl", "2. & 4. Wahl", "2. & 3. Wahl", "",
+                   "nur 1. Wahl", "1. & 4. Wahl", "1. & 3. Wahl", "", "1. & 2. Wahl"]
+        
         print("\nScores:")        
         for i,w in enumerate(histogramm):
-            print(f"{i:2d} Punkte: {w:3d}   {w/self.numNonLaueris*100:.1f}%   (mit Laueris {w/self.S*100:.1f}%)")
+            if w>0:
+                print(f"{i:2d} Punkte: {w:3d} Teilnehmer mit  {legende[i]:15s}  {w/self.numNonLaueris*100:2.1f}%   (mit Laueris {w/self.S*100:2.1f}%)")
         
 
     def plan2csv(self, datei:str):
@@ -299,7 +304,7 @@ class Plan:
         for s in range(self.S):
             for t in range(self.T):
                 w = self.x[s][t]
-                kursname = self.workshops[w]+f".{t}"
+                kursname = self.workshops[w]+f".{t+1}"
                 h = {"Klasse": kursname, "Schüler/Schülerin" : self.student_data[s]["Name"]}
                 data.append(h)
         # Tabelle als CSV rausschreiben

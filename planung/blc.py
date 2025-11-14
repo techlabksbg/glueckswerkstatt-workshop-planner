@@ -1,4 +1,5 @@
 from plan import Plan
+from xlsxeporter import exportXLSX
 import random
 
 
@@ -99,7 +100,7 @@ def goodMoves(plan:Plan, s:int, t:int, tabu:list[bool]):
 
 
 
-def tabuSearch(plan:Plan):
+def tabuSearch(plan:Plan, tabuListLength=4):
     """ Suchraum: Kein Workshop ist überbelegt, Teilnehmer sind z.T. nicht eingeteilt.
         Move: x[s][t] wird zu neuem Workshop eingeteilt, Teilenehmer in überbelegten Workshops werden ungeplant.
         Qualität eines Moves: dp
@@ -109,7 +110,6 @@ def tabuSearch(plan:Plan):
     plan.unschedule_laueris()
 
     tabutime = [0 for s in range(plan.S)]
-    tabuListLength = 4
     # Liste aller Teilnehmer, ohne Laueris
     nl = [s for s in range(plan.S) if not plan.laueri[s]]
 
@@ -149,9 +149,9 @@ def greedy_then_tabu(plan:Plan):
     nobetter = 0
     bestx = []
     bestQ = 0
-    while nobetter<100:
+    while nobetter<250:
         greedyFromScratch(plan)
-        tabuSearch(plan)
+        tabuSearch(plan, 3+random.randrange(4))
         if plan.Q>bestQ:
             nobetter = 0
             bestQ = plan.Q
@@ -164,11 +164,13 @@ def greedy_then_tabu(plan:Plan):
 
 
 # Daten einlesen
-plan = Plan("../data/2025.csv", "../data/2025m_w.csv")
+#plan = Plan("../data/2025.csv", "../data/2025m_w.csv")
+plan = Plan("../secretdata/2025.csv", "../data/2025m_w.csv")
 
 
 greedy_then_tabu(plan)
 
 plan.report()
-#plan.plan2csv("zuteilung.csv")
+plan.plan2csv("zuteilung.csv")
+exportXLSX(plan)
 
