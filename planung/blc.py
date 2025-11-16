@@ -149,9 +149,12 @@ def greedy_then_tabu(plan:Plan):
     nobetter = 0
     bestx = []
     bestQ = 0
-    while nobetter<250:
+    stat = [[] for i in range(20)]
+    while nobetter<150:
         greedyFromScratch(plan)
-        tabuSearch(plan, 3+random.randrange(4))
+        tlen = 10+random.randrange(7)
+        tabuSearch(plan, tlen)
+        stat[tlen]+=[plan.Q]
         if plan.Q>bestQ:
             nobetter = 0
             bestQ = plan.Q
@@ -159,6 +162,12 @@ def greedy_then_tabu(plan:Plan):
             print(f"bestQ: {bestQ}")
         nobetter+=1
     plan.restore(bestx)
+    with open("tabustat.csv", "w") as f:
+        f.write("tlen\tQ\n")
+        for t in range(len(stat)):
+            for v in stat[t]:
+                f.write(f"{t}\t{v}\n")
+    
     
 
 
@@ -173,4 +182,12 @@ greedy_then_tabu(plan)
 plan.report()
 plan.plan2csv("zuteilung.csv")
 exportXLSX(plan)
+
+# Plan B, ohne Workshop G21
+plan.m[20] = 0
+
+greedy_then_tabu(plan)
+plan.report()
+plan.plan2csv("zuteilung-planB.csv")
+exportXLSX(plan, "zuteilung-planB.xlsx")
 

@@ -1,3 +1,4 @@
-zuteilung.*
+zuteilung*
 orderguesser.py
-3231.xlsx
+*.xlsx
+tabustat.csv
